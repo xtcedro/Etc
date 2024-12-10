@@ -1,32 +1,44 @@
 server {
     listen 80;
-    server_name your_domain.com www.your_domain.com;
+    server_name yourdomain.com www.yourdomain.com;
 
-    # Serve static files from the public directory
-    root /var/www/domingueztechsolutions/public;
+    root /var/www/your_site;
     index index.html;
 
-    location / {
-        try_files $uri $uri/ @node;
+    # Default homepage
+    location = / {
+        try_files /index.html =404;
     }
 
-    location @node {
-        proxy_pass http://localhost:3000;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
+    # About page
+    location = /about {
+        try_files /about.html =404;
     }
 
-    # Optional: Handle static file caching
-    location ~* \.(js|css|png|jpg|jpeg|gif|svg|ico)$ {
-        expires 30d;
-        add_header Cache-Control "public, no-transform";
+    # Appointment page
+    location = /appointment {
+        try_files /appointment.html =404;
     }
 
-    # Error pages
+    # Contact page
+    location = /contact {
+        try_files /contact.html =404;
+    }
+
+    # Services page
+    location = /services {
+        try_files /services.html =404;
+    }
+
+    # Serve static files from the assets directory
+    location /assets/ {
+        try_files $uri =404;
+    }
+
+    # Logging
+    access_log /var/log/nginx/your_site_access.log;
+    error_log /var/log/nginx/your_site_error.log;
+
+    # Error page
     error_page 404 /404.html;
 }
