@@ -1,0 +1,17 @@
+server {
+    listen 80;
+    server_name www.domingueztechsolutions.com domingueztechsolutions.com;
+
+    root /var/www/domingueztechsolutions;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    error_page 404 /404.html;
+
+    # Optional: Add logging
+    access_log /var/log/nginx/domingueztechsolutions_access.log;
+    error_log /var/log/nginx/domingueztechsolutions_error.log;
+}
