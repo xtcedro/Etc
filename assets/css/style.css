@@ -1,4 +1,24 @@
-/* General Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo-icon {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    background: linear-gradient(90deg, #ffd700, #ff9800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
