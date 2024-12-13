@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Dominguez Tech Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -12,20 +13,38 @@
     </header>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="services.html">Services</a>
-        <a href="appointment.html">Book Appointment</a>
-        <a href="contact.html">Contact</a>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo" class="logo-icon">
+            <span class="logo-text">Dominguez Tech Solutions</span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
-    <section>
+    <section class="services-section">
         <h2>What We Offer</h2>
-        <ul>
-            <li>📱 <strong>iPhone Repairs</strong>: Screen replacements, battery changes, and more.</li>
-            <li>💻 <strong>Computer Repairs</strong>: Fix slow performance, hardware issues, and software problems.</li>
-            <li>🛠️ <strong>Custom Software Development</strong>: Tailored applications to meet your business needs.</li>
-        </ul>
+        <div class="services-grid">
+            <div class="service-item">
+                <i class="fas fa-mobile-alt service-icon"></i>
+                <h3>iPhone Repairs</h3>
+                <p>Screen replacements, battery changes, and quick fixes to keep your iPhone running smoothly.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-desktop service-icon"></i>
+                <h3>Computer Repairs</h3>
+                <p>Resolve slow performance, hardware issues, and software problems with expert service.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-code service-icon"></i>
+                <h3>Custom Software Development</h3>
+                <p>Tailored applications designed to streamline and optimize your business operations.</p>
+            </div>
+        </div>
     </section>
 
     <footer>
