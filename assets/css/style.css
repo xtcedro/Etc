@@ -289,11 +289,14 @@ form button[type="submit"]:hover {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
-
-/* Media Query for Responsive Layout */
 @media (max-width: 600px) {
-    .form-grid {
-        grid-template-columns: 1fr;
+    .logo-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
     }
 }
 
