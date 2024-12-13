@@ -1,275 +1,72 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominguez Tech Solutions - Fast, Affordable, Reliable</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
-/* Navigation Bar */
-nav {
-    background-color: #00274D;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo" class="logo-icon">
+            <span class="logo-text">Dominguez Tech Solutions</span>
+        </div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="appointment.html">Book Appointment Online</a></li>
+        </ul>
+    </nav>
 
-nav .logo {
-    display: flex;
-    align-items: center;
-}
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Fast. Affordable. Reliable.</h1>
+        <p>
+            Tired of long wait times and overpriced repairs? At <strong>Dominguez Tech Solutions</strong>, 
+            I specialize in <strong>24-hour iPhone, computer, and laptop repairs</strong> right here in Oklahoma City. 
+            My mission is to provide you with <strong>top-notch services</strong> at a fraction of the cost of big repair shops.
+        </p>
+        <a href="appointment.html" class="cta-button">Book an Appointment</a>
+    </section>
 
-nav .logo-icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 0.75rem;
-}
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>iPhone Repairs</h3>
+                <p>Get your iPhone repaired in under 24 hours, with high-quality parts and expert service.</p>
+            </div>
+            <div class="service-item">
+                <h3>Computer Repairs</h3>
+                <p>Fast and affordable repairs for all kinds of computers, from desktops to laptops.</p>
+            </div>
+            <div class="service-item">
+                <h3>Custom Software</h3>
+                <p>Develop tailored software solutions for your business to streamline operations.</p>
+            </div>
+        </div>
+    </section>
 
-nav .logo-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: gold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+    <!-- Bilingual Section -->
+    <section id="bilingual">
+        <h2>Hablamos Tu Idioma</h2>
+        <p>
+            ¿Prefieres hablar en español? ¡No hay problema! Estamos aquí para ayudarte con reparaciones 
+            de iPhones, computadoras y más. <strong>¡Contáctanos hoy mismo!</strong>
+        </p>
+        <a href="contact.html" class="cta-button">Contáctanos</a>
+    </section>
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 1.5rem;
-}
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dominguez Tech Solutions. All rights reserved.</p>
+    </footer>
 
-nav ul li a {
-    color: #f0f0f0;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover, nav ul li a.active {
-    color: gold;
-}
-
-/* Hero Section */
-.hero-section {
-    background: linear-gradient(135deg, #00274D, #004080);
-    color: white;
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-.hero-section h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    color: gold;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-.hero-section p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 700px;
-    margin: 0 auto 2rem;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: gold;
-    color: #00274D;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #d4af37;
-}
-
-/* Services Section */
-#services {
-    padding: 3rem 2rem;
-    background-color: #fff;
-    text-align: center;
-}
-
-#services h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    color: gold;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.services-grid {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.service-item {
-    background-color: #f0f0f0;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 300px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-item h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #00274D;
-}
-
-.service-item p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
-}
-
-.service-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Bilingual Section */
-#bilingual {
-    background-color: #fff4e5;
-    padding: 3rem 2rem;
-    text-align: center;
-    border-top: 4px solid #6B8E23;
-    border-bottom: 4px solid #6B8E23;
-}
-
-#bilingual h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    color: #d32f2f;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-#bilingual p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 700px;
-    margin: 0 auto 2rem;
-    color: #333;
-    font-weight: 500;
-}
-
-#bilingual .cta-button {
-    background-color: #d32f2f;
-    color: white;
-    transition: background-color 0.3s ease;
-}
-
-#bilingual .cta-button:hover {
-    background-color: #b71c1c;
-}
-
-/* Footer */
-footer {
-    background-color: #00274D;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    font-size: 1rem;
-    margin-top: 2rem;
-}
-/* Form Container Styles */
-form {
-    background-color: #f4f4f4;
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Form Heading */
-form h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    color: #00274D;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Form Labels */
-form label {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    color: #00274D;
-}
-
-/* Form Input Fields */
-form input[type="text"],
-form input[type="email"],
-form select,
-form input[type="date"],
-form input[type="time"] {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-    box-sizing: border-box;
-}
-
-form input:focus,
-form select:focus {
-    border-color: #0078D7;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 120, 215, 0.3);
-}
-
-/* Form Button */
-form button[type="submit"] {
-    background-color: #0078D7;
-    color: white;
-    padding: 0.75rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s ease;
-    text-transform: uppercase;
-}
-
-form button[type="submit"]:hover {
-    background-color: #005bb5;
-}
-
-/* Form Grid for Two-Column Layout */
-.form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-/* Media Query for Responsive Layout */
-@media (max-width: 600px) {
-    .form-grid {
-        grid-template-columns: 1fr;
-    }
-}
+</body>
+</html>
