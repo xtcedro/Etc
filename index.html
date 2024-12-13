@@ -188,3 +188,88 @@ footer {
     font-size: 1rem;
     margin-top: 2rem;
 }
+/* Form Container Styles */
+form {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Form Heading */
+form h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #00274D;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form Labels */
+form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #00274D;
+}
+
+/* Form Input Fields */
+form input[type="text"],
+form input[type="email"],
+form select,
+form input[type="date"],
+form input[type="time"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #0078D7;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 120, 215, 0.3);
+}
+
+/* Form Button */
+form button[type="submit"] {
+    background-color: #0078D7;
+    color: white;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+form button[type="submit"]:hover {
+    background-color: #005bb5;
+}
+
+/* Form Grid for Two-Column Layout */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* Media Query for Responsive Layout */
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
