@@ -459,8 +459,8 @@ form button[type="submit"]:hover {
 }
 
 .logo-icon {
-    width: 80px;   /* Increased width */
-    height: 80px;  /* Increased height */
+    width: 100px;   /* Increased width */
+    height: 100px;  /* Increased height */
     margin-right: 1rem;
 }
 
