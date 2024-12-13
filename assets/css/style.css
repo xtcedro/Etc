@@ -1,3 +1,25 @@
+
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    box-sizing: border-box;
+}
+
+/* Ensure all elements respect the box-sizing */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Limit the width of the main container to prevent overflow */
+header, nav, section, footer {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
