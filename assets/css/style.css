@@ -449,6 +449,26 @@ form button[type="submit"]:hover {
     color: #555;
 }
 
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 80px;   /* Increased width */
+    height: 80px;  /* Increased height */
+    margin-right: 1rem;
+}
+
+.logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;     /* Increased font size */
+    font-weight: bold;
+    color: gold;
+    letter-spacing: 1px;
+}
+
 /* Footer */
 footer {
     background-color: #00274D;
