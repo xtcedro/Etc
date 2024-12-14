@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Dominguez Tech Solutions</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo" class="logo-icon">
+            <span class="logo-text">Dominguez Tech Solutions</span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <h1>Let's Connect and Build Something Great Together</h1>
+        <p>
+            At <strong>Dominguez Tech Solutions</strong>, I believe that technology should empower, not hinder. Whether you need reliable repairs, custom solutions, or expert advice, I’m here to make sure you get the support you deserve.  
+        </p>
+        <p>
+            Your challenges are my challenges, and I’m committed to delivering <strong>fast</strong>, <strong>affordable</strong>, and <strong>reliable</strong> solutions. Let’s work together to bring your tech back to life and drive your success forward.
+        </p>
+        <a href="#contact-form" class="cta-button">Get in Touch</a>
+    </header>
+
+    <!-- Contact Information Section -->
+    <section class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p><strong>Email:</strong> <a href="mailto:info@domingueztechsolutions.com">info@domingueztechsolutions.com</a></p>
+        <p><strong>Phone:</strong> (555) 123-4567</p>
+        <p><strong>Service Area:</strong> Oklahoma City, OK and surrounding areas</p>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="container" id="contact-form">
+        <h2 class="section-title">Send a Message</h2>
+        <form action="send_message.php" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dominguez Tech Solutions. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
