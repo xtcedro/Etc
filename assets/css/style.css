@@ -383,3 +383,109 @@ body {
 
 
 
+/* Navigation Bar General Styles */
+nav {
+    background-color: #002855;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Logo Styling */
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo-icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+}
+
+nav .logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: gold;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: gold;
+}
+
+/* Responsive Navigation for Mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        background-color: #002855;
+        display: none;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        border-bottom: 1px solid #004080;
+    }
+
+    nav ul li a:hover {
+        background-color: #004080;
+    }
+
+    /* Menu Toggle Button */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .menu-toggle:hover {
+        color: gold;
+    }
+
+    /* Show Menu when Active */
+    nav.active ul {
+        display: flex;
+    }
+}
+
+/* Hide Menu Toggle by Default */
+.menu-toggle {
+    display: none;
+}
