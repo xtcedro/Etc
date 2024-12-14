@@ -469,3 +469,11 @@ nav ul li a.active {
 .menu-toggle {
     display: none;
 }
+
+body {
+    padding-top: 80px;
+}
+
+header {
+    margin-top: 20px;
+}
