@@ -470,10 +470,27 @@ nav ul li a.active {
     display: none;
 }
 
-body {
-    padding-top: 80px;
+
+body, html {
+    margin: 0;
+    padding: 0;
+} 
+
+header, nav {
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    margin-top: 20px;
+* {
+    box-sizing: border-box;
 }
+
+.hero-section h1 {
+    margin-top: 0;
+}
+
+body {
+    background-color: #00274D; /* or any background color that matches your design */
+}
+
+
