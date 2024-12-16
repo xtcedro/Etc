@@ -378,7 +378,7 @@ footer {
 
 /* Add padding to the body to prevent content from being hidden behind the fixed nav */
 body {
-    padding-top: 80px;        /* Adjust this value based on the height of your nav */
+    padding-top: 0;        /* Adjust this value based on the height of your nav */
 }
 
 
