@@ -3,32 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Dominguez Tech Solutions</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Dominguez Tech Solutions offers Fast, affordable iPhone and computer repairs, custom software development, and website design in Oklahoma City. Quality service with a 24-hour turnaround.">
+    <title>Home - Dominguez Tech Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            document.querySelector('.mobile-menu').classList.toggle('show');
+    </script>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
- <div class="menu-toggle" onclick="toggleMenu()">☰</div> 
-    <i class="fas fa-bars"></i>
-        <div class="logo">
-            <img src="assets/images/logo.png" alt="Logo" class="logo-icon">
-            <span class="logo-text">Dominguez Tech Solutions</span>
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html"class="active">About Me</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="appointment.html">Book Appointment Online</a></li>
-        </ul>
-    </nav>
-
+    <!-- Header Section -->
+    <header>
+        <h1>Dominguez Tech Solitions</h1>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </header>
+   
     <section class="hero-section">
-        <h1 class="hero-title">Pedro Dominguez</h1>
-        <p class="hero-subtitle">Tech Enthusiast • Devoted Catholic • Innovator</p>
-        <a href="services.html" class="cta-button">Explore My Services</a>
+        <h1 class="hero-title">About Pedro Dominguez</h1>
+        <p class="hero-subtitle">Tech Enthusiast • Devoted Catholic • Innovator • IT Consultant</p>
     </section>
 
     <section class="about-section">
@@ -59,7 +52,7 @@ Lately, I’ve been diving into software development, picking up new skills quic
         </p>
     </section>
 
-    <section class="call-to-action-section">
+        <section class="call-to-action-section">
         <h2>A Call to Leaders and Innovators</h2>
         <p>
             <strong>Oil Giants</strong> like ExxonMobil — your expertise and resources can fuel a new era of prosperity.
@@ -70,16 +63,9 @@ Lately, I’ve been diving into software development, picking up new skills quic
         <p>
             <strong>Governor of Oklahoma</strong> — together, let’s pave the way for a fairer, brighter future for every citizen.
         </p>
-    </section>
-
-    <footer>
+        </section>
+            <footer>
         <p>&copy; 2024 Dominguez Tech Solutions. All rights reserved.</p>
-    </footer>
-<script>
-    function toggleMenu() {
-        const nav = document.querySelector('nav');
-        nav.classList.toggle('active');
-    }
-</script>
-</body>
+            </footer>
+    </body>
 </html>
