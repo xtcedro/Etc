@@ -3,82 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dominguez Tech Solutions - Fast, Affordable, Reliable</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <meta name="description" content="Dominguez Tech Solutions offers Fast, affordable iPhone and computer repairs, custom software development, and website design in Oklahoma City. Quality service with a 24-hour turnaround.">
+    <title>Home - Dominguez Tech Solutions</title>
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Navigation Bar -->
-    <nav>
- <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        <div class="logo">
-            <img src="assets/images/logo.png" alt="Logo" class="logo-icon">
-            <span class="logo-text">Dominguez Tech Solutions</span>
+<script>
+        function setLanguage(lang) {
+            if (lang === 'es') {
+                window.location.href = 'index_es.html'; // Redirect to Spanish version
+            } else {
+                document.getElementById('language-modal').style.display = 'none';
+                document.body.classList.remove('hidden');
+                document.getElementById('main-content').classList.remove('hidden-content');
+            }
+        }
+   </script>
+</head>
+
+<body class="hidden">
+  <!-- Language Selection Modal -->
+<div id="language-modal" class="modal">
+    <div class="modal-content">
+        <h2>Language</h2>
+        <div class="language-options">
+            <button onclick="setLanguage('en')">
+                <img src="assets/images/us-flag.png" alt="English" class="flag-icon"> English
+            </button>
+            <button onclick="setLanguage('es')">
+                <img src="assets/images/mx-flag.png" alt="Español" class="flag-icon"> Español
+            </button>
         </div>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="appointment.html">Book Appointment Online</a></li>
-        </ul>
-    </nav>
+    </div>
+</div>
+
+    <!-- Main Content (Hidden Initially) -->
+    <div id="main-content" class="hidden-content">
+        <!-- Header Section -->
+        <header>
+            <h1>Dominguez Tech Solutions</h1>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="about2.html">About Pedro Dominguez</a>
+            <a href="services.html">Services</a>
+            <a href="appointments.html">Appointments</a>
+            <a href="offers.html">Special Offers</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="about2.html">About Pedro Dominguez</a>
+            <a href="services.html">Services</a>
+            <a href="appointments.html">Appointments</a>
+            <a href="offers.html">Special Offers</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <h1>Fast. Affordable. Reliable.</h1>
-       <p>
+        <h1>Welcome to Dominguez Tech Solutions - Fast, Reliable, and Affordable Tech Services for the Oklahoma City Metro Area</h1>
+        <p>
     Tired of long wait times and overpriced services? At <strong>Dominguez Tech Solutions</strong>, 
     I specialize in <strong>24-hour iPhone, computer, and laptop repairs</strong>, as well as 
     <strong>custom software development</strong> and <strong>website design, development, and deployment</strong>. 
     My mission is to provide <strong>top-notch services</strong> for individuals and businesses in Oklahoma City 
     at a fraction of the cost of big repair shops and freelance developers.
-</p>
-        <a href="appointment.html" class="cta-button">Book an Appointment</a>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service-item">
-                <h3>iPhone Repairs</h3>
-                <p>Get your iPhone repaired in under 24 hours, with high-quality parts and expert service.</p>
-            </div>
-            <div class="service-item">
-                <h3>Computer Repairs</h3>
-                <p>Fast and affordable repairs for all kinds of computers, from desktops to laptops.</p>
-            </div>
-            <div class="service-item">
-                <h3>Custom Software</h3>
-                <p>Develop tailored software solutions for your business to streamline operations.</p>
-            </div>
-            <div class="service-item">
-                <h3>Website Development</h3>
-                <p>Get a professionally designed and fully deployed website in just 24 hours. Whether you're an individual or a business, enjoy fast, affordable, and tailored web solutions at a fraction of the cost of freelance developers. </p>
-        </div>
-    </section>
-
-    <!-- Bilingual Section -->
-    <section id="bilingual">
-        <h2>Hablamos Tu Idioma</h2>
-        <p>
-            ¿Prefieres hablar en español? ¡No hay problema! Estamos aquí para ayudarte con reparaciones 
-            de iPhones, computadoras y más. <strong>¡Contáctanos hoy mismo!</strong>
         </p>
-        <a href="contact.html" class="cta-button">Contáctanos</a>
     </section>
+        
+        <!-- Main Content -->
+        <main>
+            <section>
+                <h2>Our Services</h2>
+                <p>We offer a full range of information technology solutions for local businesses and individuals, including:</p>
+                <ul>
+                    <li>Iphone Repair</li>
+                    <li>Computer repair</li>
+                    <li>Custom software development</li>
+                    <li>Website design and deployment</li>
+                    <li>Information Technology Consulting</li>
+                </ul>
+            </section>
 
-    <!-- Footer -->
+    <!-- Footer -->    
     <footer>
         <p>&copy; 2024 Dominguez Tech Solutions. All rights reserved.</p>
     </footer>
-<script>
-    function toggleMenu() {
-        const nav = document.querySelector('nav');
-        nav.classList.toggle('active');
-    }
-</script>
 </body>
 </html>
