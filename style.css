@@ -420,7 +420,13 @@ form .success-message {
 .call-to-action-section .cta-button:hover {
     background-color: #d4af37;
 }
-<div class="title-banner">
-    <img src="assets/images/banner.png" alt="Dominguez Tech Solutions">
-</div>
+
+.title-banner img {
+    width: 100%;            /* Make it responsive to the width of the container */
+    max-width: 1000px;      /* Set a maximum width if needed */
+    height: auto;           /* Maintain the aspect ratio */
+    display: block;         /* Center the image within the div */
+    margin: 0 auto;         /* Centering horizontally */
+    padding-top: 20px;      /* Add space above the image if needed */
+}
 
