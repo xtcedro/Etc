@@ -200,8 +200,8 @@ a:hover {
 }
 
 .modal-content {
-    background-color: #FF6600;
-    color: #FFFFFF;
+    background-color: #001F3F;  /* Navy Blue */
+    color: #FFFFFF;             /* White Text */
     padding: 2rem;
     text-align: center;
     border-radius: 10px;
@@ -220,8 +220,8 @@ a:hover {
 }
 
 .language-options button {
-    background-color: #252F34;
-    color: #FFFFFF;
+    background-color: #001F3F;  /* Navy Blue */
+    color: #FFFFFF;             /* White Text */
     padding: 1rem;
     border: none;
     cursor: pointer;
@@ -234,9 +234,8 @@ a:hover {
 }
 
 .language-options button:hover {
-    background-color: #1F2A2E;
+    background-color: #002855;  /* Slightly Lighter Navy Blue for Hover Effect */
 }
-
 /* Flag Icon Styling */
 .flag-icon {
     width: 32px;
