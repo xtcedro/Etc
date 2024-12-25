@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with Dominguez Tech Solutions for inquiries about iPhone repairs, computer repairs, or custom technology solutions in Oklahoma City.">
+    <meta name="description" content="Contact Dominguez Tech Solutions for reliable and affordable tech services in the Oklahoma City metro area.">
     <title>Contact Us - Dominguez Tech Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script>
@@ -23,7 +23,7 @@
         </div>
     </header>
 
-    <!-- Mobile Navigation -->
+    <!-- Navigation -->
     <div class="hamburger" onclick="toggleMobileMenu()">&#9776;</div>
     <ul id="mobile-menu" class="mobile-menu">
         <li><a href="index.html">Home</a></li>
@@ -35,7 +35,6 @@
         <li><a href="contact.html" class="active">Contact Us</a></li>
     </ul>
 
-    <!-- Desktop Navigation -->
     <div class="desktop-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -49,26 +48,23 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <h1 class="hero-title">Contact Us</h1>
-        <p class="hero-subtitle">We’d Love to Hear from You</p>
+        <p class="hero-subtitle">Get in touch with Dominguez Tech Solutions for all your tech needs.</p>
     </section>
 
-    <!-- Contact Form Section -->
-    <section class="form-section">
+    <!-- Contact Form -->
+    <section class="form-container">
         <h2>Send Us a Message</h2>
-        <form action="submit_contact.php" method="post">
-            <div class="form-group">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="cta-button">Submit</button>
+        <form action="/submit_contact" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
         </form>
     </section>
 
