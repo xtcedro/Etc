@@ -3,61 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Dominguez Tech Solutions</title>
+    <meta name="description" content="Get in touch with Dominguez Tech Solutions for inquiries about iPhone repairs, computer repairs, or custom technology solutions in Oklahoma City.">
+    <title>Contact Us - Dominguez Tech Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("show");
+        }
+    </script>
 </head>
+
 <body>
-
-    <!-- Navigation Bar -->
-    <nav>
- <div class="menu-toggle" onclick="toggleMenu()">☰</div> 
-    <i class="fas fa-bars"></i>
-        <div class="logo">
-            <img src="assets/images/logo.png" alt="Logo" class="logo-icon">
-            <span class="logo-text">Dominguez Tech Solutions</span>
+    <!-- Header Section -->
+    <header>
+        <h1 class="header-title">Dominguez Tech Solutions</h1>
+        <div class="title-banner">
+            <img src="assets/images/banner.png" alt="Dominguez Tech Solutions">
         </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html" class="active">Contact Us</a></li>
-            <li><a href="appointment.html">Book Appointment Online</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero-section">
-        <h1>Let's Connect and Build Something Great Together</h1>
-        <p>Your challenges are my challenges, and I’m committed to delivering <strong>fast</strong>, <strong>affordable</strong>, and <strong>reliable</strong> solutions.</p>
-        <a href="#contact-form" class="cta-button">Get in Touch</a>
     </header>
 
-    <!-- Contact Information Section -->
-    <section class="container contact-info">
-        <h2 class="section-title">Get in Touch</h2>
-        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:info@domingueztechsolutions.com">info@domingueztechsolutions.com</a></p>
-        <p><i class="fas fa-phone"></i> <strong>Phone:</strong> (539)901-5819</p>
-        <p><i class="fas fa-map-marker-alt"></i> <strong>Service Area:</strong> Oklahoma City, OK and surrounding areas</p>
+    <!-- Mobile Navigation -->
+    <div class="hamburger" onclick="toggleMobileMenu()">&#9776;</div>
+    <ul id="mobile-menu" class="mobile-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="offers.html">Special Offers</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+    </ul>
+
+    <!-- Desktop Navigation -->
+    <div class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="offers.html">Special Offers</a>
+        <a href="contact.html" class="active">Contact Us</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1 class="hero-title">Contact Us</h1>
+        <p class="hero-subtitle">We’d Love to Hear from You</p>
     </section>
 
-    <!-- Contact Form -->
-    <section class="container" id="contact-form">
-        <h2 class="section-title">Send a Message</h2>
-        <form action="send_message.php" method="POST">
+    <!-- Contact Form Section -->
+    <section class="form-section">
+        <h2>Send Us a Message</h2>
+        <form action="submit_contact.php" method="post">
             <div class="form-group">
-                <label for="name">Your Name</label>
+                <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
-                <label for="email">Your Email</label>
+                <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
-                <label for="message">Your Message</label>
+                <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-            <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+            <button type="submit" class="cta-button">Submit</button>
         </form>
     </section>
 
@@ -65,11 +74,5 @@
     <footer>
         <p>&copy; 2024 Dominguez Tech Solutions. All rights reserved.</p>
     </footer>
-<script>
-    function toggleMenu() {
-        const nav = document.querySelector('nav');
-        nav.classList.toggle('active');
-    }
-</script>
 </body>
 </html>
