@@ -533,3 +533,19 @@ form .success-message {
         display: none; /* Hide desktop navigation on smaller screens */
     }
 }
+
+.title-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width of the screen */
+    overflow: hidden; /* Ensures no content overflows */
+}
+
+.title-banner img {
+    max-width: 100%; /* Ensures the image does not exceed its container */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image covers the container properly */
+    display: block; /* Removes extra space below the image */
+    margin: 0 auto; /* Centers the image horizontally */
+}
