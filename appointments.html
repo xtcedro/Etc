@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Schedule an appointment with Dominguez Tech Solutions for iPhone repairs, computer repairs, or custom technology solutions in Oklahoma City.">
+    <meta name="description" content="Book an appointment with Dominguez Tech Solutions for reliable and affordable tech services in the Oklahoma City metro area.">
     <title>Appointments - Dominguez Tech Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script>
@@ -23,7 +23,7 @@
         </div>
     </header>
 
-    <!-- Mobile Navigation -->
+    <!-- Navigation -->
     <div class="hamburger" onclick="toggleMobileMenu()">&#9776;</div>
     <ul id="mobile-menu" class="mobile-menu">
         <li><a href="index.html">Home</a></li>
@@ -35,7 +35,6 @@
         <li><a href="contact.html">Contact Us</a></li>
     </ul>
 
-    <!-- Desktop Navigation -->
     <div class="desktop-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -48,44 +47,30 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <h1 class="hero-title">Schedule an Appointment</h1>
-        <p class="hero-subtitle">Book Your Service with Dominguez Tech Solutions Today</p>
+        <h1 class="hero-title">Book an Appointment</h1>
+        <p class="hero-subtitle">Reliable and affordable tech services tailored to your needs.</p>
     </section>
 
-    <!-- Appointment Form Section -->
-    <section class="form-section">
+    <!-- Appointments Form -->
+    <section class="form-container">
         <h2>Book Your Appointment</h2>
-        <form action="submit_appointment.php" method="post">
-            <div class="form-group">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="service">Select Service:</label>
-                <select id="service" name="service" required>
-                    <option value="iphone-repair">iPhone Repair</option>
-                    <option value="computer-repair">Computer Repair</option>
-                    <option value="software-development">Custom Software Development</option>
-                    <option value="website-design">Website Design</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="date">Preferred Date:</label>
-                <input type="date" id="date" name="date" required>
-            </div>
-            <div class="form-group">
-                <label for="time">Preferred Time:</label>
-                <input type="time" id="time" name="time" required>
-            </div>
-            <button type="submit" class="cta-button">Submit</button>
+        <form action="/submit_appointment" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="message">Additional Notes:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <button type="submit">Book Appointment</button>
         </form>
     </section>
 
