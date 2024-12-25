@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Agende una cita con Dominguez Tech Solutions para reparaciones de iPhone, reparaciones de computadoras o soluciones tecnológicas personalizadas en Oklahoma City.">
+    <meta name="description" content="Reserve una cita con Dominguez Tech Solutions para servicios técnicos confiables y asequibles en el área metropolitana de Oklahoma City.">
     <title>Citas - Dominguez Tech Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script>
@@ -23,7 +23,7 @@
         </div>
     </header>
 
-    <!-- Mobile Navigation -->
+    <!-- Navigation -->
     <div class="hamburger" onclick="toggleMobileMenu()">&#9776;</div>
     <ul id="mobile-menu" class="mobile-menu">
         <li><a href="index_es.html">Inicio</a></li>
@@ -35,7 +35,6 @@
         <li><a href="contact_es.html">Contáctenos</a></li>
     </ul>
 
-    <!-- Desktop Navigation -->
     <div class="desktop-nav">
         <a href="index_es.html">Inicio</a>
         <a href="about_es.html">Acerca de Nosotros</a>
@@ -48,44 +47,30 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <h1 class="hero-title">Agende una Cita</h1>
-        <p class="hero-subtitle">Reserve su Servicio con Dominguez Tech Solutions Hoy</p>
+        <h1 class="hero-title">Reserva una Cita</h1>
+        <p class="hero-subtitle">Servicios técnicos confiables y asequibles adaptados a sus necesidades.</p>
     </section>
 
-    <!-- Appointment Form Section -->
-    <section class="form-section">
-        <h2>Reserve su Cita</h2>
-        <form action="submit_appointment.php" method="post">
-            <div class="form-group">
-                <label for="name">Nombre Completo:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Número de Teléfono:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="service">Seleccione el Servicio:</label>
-                <select id="service" name="service" required>
-                    <option value="iphone-repair">Reparación de iPhone</option>
-                    <option value="computer-repair">Reparación de Computadora</option>
-                    <option value="software-development">Desarrollo de Software Personalizado</option>
-                    <option value="website-design">Diseño de Sitios Web</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="date">Fecha Preferida:</label>
-                <input type="date" id="date" name="date" required>
-            </div>
-            <div class="form-group">
-                <label for="time">Hora Preferida:</label>
-                <input type="time" id="time" name="time" required>
-            </div>
-            <button type="submit" class="cta-button">Enviar</button>
+    <!-- Appointments Form -->
+    <section class="form-container">
+        <h2>Reservar su Cita</h2>
+        <form action="/submit_appointment" method="post">
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Fecha Preferida:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Hora Preferida:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="message">Notas Adicionales:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <button type="submit">Reservar Cita</button>
         </form>
     </section>
 
