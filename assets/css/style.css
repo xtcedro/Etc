@@ -600,3 +600,37 @@ form .success-message {
         display: none; /* Hide mobile menu on larger screens */
     }
 }
+
+.contact-info {
+    background-color: #003366; /* Dark blue background */
+    color: #ffffff; /* White text */
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2rem auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    max-width: 600px;
+}
+
+.contact-info h2 {
+    font-size: 1.8rem;
+    color: #ffcc00; /* Gold color */
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+    color: #ffcc00; /* Gold for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #d4af37; /* Lighter gold on hover */
+}
