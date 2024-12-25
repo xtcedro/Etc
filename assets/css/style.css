@@ -570,3 +570,33 @@ form .success-message {
     background-color: #FF6600;
     transform: scale(1.1);
 }
+
+/* Hide the hamburger menu by default */
+.hamburger {
+    display: none; /* Hidden on larger screens */
+}
+
+/* Show the hamburger menu only on small screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Visible only on mobile screens */
+    }
+
+    .desktop-nav {
+        display: none; /* Hide the desktop navigation on mobile */
+    }
+}
+
+/* Show the desktop navigation by default */
+.desktop-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* On larger screens, hide the mobile menu */
+@media (min-width: 769px) {
+    #mobile-menu {
+        display: none; /* Hide mobile menu on larger screens */
+    }
+}
