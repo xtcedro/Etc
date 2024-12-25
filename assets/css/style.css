@@ -228,54 +228,6 @@ nav {
     }
 }
 
-/* General Form Styling */
-.form-container {
-    background-color: #002855; /* Form background color */
-    color: #ffffff; /* Text color */
-    padding: 2rem; /* Inner padding */
-    margin: 0 auto; /* Center the form horizontally */
-    max-width: 600px; /* Maximum width for the form */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-}
-
-.form-container label {
-    display: block;
-    margin-bottom: 0.5rem; /* Space below labels */
-    font-weight: bold;
-    color: #ffcc00; /* Label text color */
-}
-
-.form-container input,
-.form-container textarea {
-    width: 100%; /* Full width of input/textarea */
-    padding: 0.75rem; /* Inner padding */
-    margin-bottom: 1rem; /* Space between fields */
-    border: 1px solid #004080; /* Border color */
-    border-radius: 5px; /* Rounded corners */
-    background-color: #003366; /* Input background color */
-    color: #ffffff; /* Input text color */
-    font-size: 1rem; /* Input font size */
-}
-
-.form-container button {
-    display: block;
-    width: 100%; /* Full width button */
-    padding: 0.75rem;
-    background-color: #ffcc00; /* Button background */
-    color: #002855; /* Button text color */
-    border: none;
-    font-weight: bold;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.form-container button:hover {
-    background-color: #d4af37; /* Hover effect */
-}
-
 /* Input Fields */
 form input[type="text"],
 form input[type="email"],
@@ -295,58 +247,6 @@ form textarea {
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Focus State for Inputs */
-form input:focus,
-form select:focus,
-form textarea:focus {
-    border-color: #FFD700; /* Gold border on focus */
-    box-shadow: 0 0 5px rgba(255, 215, 0, 0.7); /* Gold glow */
-    outline: none;
-}
-
-/* Form Buttons */
-form button {
-    padding: 0.75rem 1.5rem;
-    background-color: #FFD700; /* Gold button */
-    color: #002855; /* Dark blue text */
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background-color 0.3s, transform 0.2s;
-    width: 100%; /* Full-width button */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Button Hover State */
-form button:hover {
-    background-color: #D4AF37; /* Slightly darker gold */
-    transform: translateY(-2px);
-}
-
-/* Error and Success Messages */
-form .error-message,
-form .success-message {
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-}
-
-/* Error Message */
-form .error-message {
-    background-color: #D9534F; /* Red background */
-    color: #FFFFFF; /* White text */
-}
-
-/* Success Message */
-form .success-message {
-    background-color: #5CB85C; /* Green background */
-    color: #FFFFFF; /* White text */
-}
 
 /* Responsive Form Styling */
 @media (max-width: 768px) {
