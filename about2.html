@@ -11,33 +11,11 @@
             const menu = document.getElementById("mobile-menu");
             menu.classList.toggle("show");
         }
-
-        function setLanguage(lang) {
-            if (lang === 'es') {
-                window.location.href = 'about2_es.html'; // Redirect to Spanish version
-            } else {
-                document.getElementById('language-modal').style.display = 'none';
-            }
-        }
     </script>
 </head>
 
 <body>
-    <!-- Language Selection Modal -->
-    <div id="language-modal" class="modal">
-        <div class="modal-content">
-            <h2>Language</h2>
-            <div class="language-options">
-                <button onclick="setLanguage('en')">
-                    <img src="assets/images/us-flag.png" alt="English" class="flag-icon"> English
-                </button>
-                <button onclick="setLanguage('es')">
-                    <img src="assets/images/mx-flag.png" alt="Español" class="flag-icon"> Español
-                </button>
-            </div>
-        </div>
-    </div>
-
+    
     <!-- Header Section -->
     <header>
         <h1 class="header-title">Dominguez Tech Solutions</h1>
