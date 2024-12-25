@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dominguez Tech Solutions ofrece reparaciones rápidas y asequibles para iPhones y computadoras, desarrollo de software personalizado y diseño de sitios web en Oklahoma City. Servicio de calidad con entrega en 24 horas.">
+    <meta name="description" content="Dominguez Tech Solutions ofrece reparaciones rápidas y asequibles de iPhone y computadoras, desarrollo de software personalizado y diseño de sitios web en Oklahoma City. Servicio de calidad con un tiempo de entrega de 24 horas.">
     <title>Inicio - Dominguez Tech Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script>
@@ -11,11 +11,33 @@
             const menu = document.getElementById("mobile-menu");
             menu.classList.toggle("show");
         }
+
+        function setLanguage(lang) {
+            if (lang === 'en') {
+                window.location.href = 'index.html'; // Redirect to English version
+            } else {
+                document.getElementById('language-modal').style.display = 'none';
+            }
+        }
     </script>
 </head>
 
 <body>
-  
+    <!-- Language Selection Modal -->
+    <div id="language-modal" class="modal">
+        <div class="modal-content">
+            <h2>Idioma</h2>
+            <div class="language-options">
+                <button onclick="setLanguage('en')">
+                    <img src="assets/images/us-flag.png" alt="English" class="flag-icon"> English
+                </button>
+                <button onclick="setLanguage('es')">
+                    <img src="assets/images/mx-flag.png" alt="Español" class="flag-icon"> Español
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Header Section -->
     <header>
         <h1 class="header-title">Dominguez Tech Solutions</h1>
@@ -54,12 +76,12 @@
         </h1>
         <p>
             ¿Cansado de largos tiempos de espera y servicios costosos? En <strong>Dominguez Tech Solutions</strong>, 
-            me especializo en <strong>reparaciones de iPhone, computadoras y laptops en 24 horas</strong>, así como 
-            en <strong>desarrollo de software personalizado</strong> y <strong>diseño, desarrollo y despliegue de sitios web</strong>. 
-            Mi misión es proporcionar <strong>servicios de alta calidad</strong> para individuos y empresas en Oklahoma City 
-            a una fracción del costo de grandes talleres de reparación y desarrolladores independientes.
+            me especializo en <strong>reparaciones de iPhone, computadoras y laptops en 24 horas</strong>, así como en 
+            <strong>desarrollo de software personalizado</strong> y <strong>diseño, desarrollo y despliegue de sitios web</strong>. 
+            Mi misión es brindar <strong>servicios de alta calidad</strong> para individuos y negocios en Oklahoma City 
+            a una fracción del costo de las grandes tiendas de reparación y desarrolladores independientes.
         </p>
-        <button class="cta-button" onclick="location.href='services_es.html'">Conozca Más</button>
+        <button class="cta-button" onclick="location.href='services_es.html'">Más Información</button>
     </section>
 
     <!-- Services Section -->
@@ -72,18 +94,18 @@
             </div>
             <div class="service-item">
                 <h3>Software Personalizado</h3>
-                <p>Desarrolle soluciones de software a medida para su negocio y optimice sus operaciones.</p>
+                <p>Desarrolle soluciones de software personalizadas para su negocio y optimice sus operaciones.</p>
             </div>
             <div class="service-item">
                 <h3>Desarrollo de Sitios Web</h3>
                 <p>
-                    Obtenga un sitio web profesional y completamente desplegado en tan solo 24 horas. 
-                    Ya sea para individuos o empresas, disfrute de soluciones web rápidas, asequibles y personalizadas 
-                    a una fracción del costo de desarrolladores independientes.
+                    Obtenga un sitio web profesionalmente diseñado y completamente desplegado en solo 24 horas.
+                    Ya sea que sea un individuo o un negocio, disfrute de soluciones web rápidas, asequibles y personalizadas 
+                    a una fracción del costo de los desarrolladores independientes.
                 </p>
             </div>
             <div class="service-item">
-                <h3>Reparación de iPhones</h3>
+                <h3>Reparación de iPhone</h3>
                 <p>Servicios de reparación de iPhone rápidos, confiables y asequibles para que su dispositivo funcione como nuevo.</p>
             </div>
         </div>
