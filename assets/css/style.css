@@ -276,33 +276,6 @@ nav {
     background-color: #d4af37; /* Hover effect */
 }
 
-/* General Form Styling */
-form {
-    background-color: #003366; /* Darker blue background */
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-    max-width: 600px;
-    margin: 2rem auto;
-    color: #fff;
-    font-size: 1rem;
-}
-
-/* Form Groups */
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-/* Labels */
-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: #FFD700; /* Gold for labels */
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
 /* Input Fields */
 form input[type="text"],
 form input[type="email"],
