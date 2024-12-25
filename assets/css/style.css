@@ -549,3 +549,9 @@ form .success-message {
     display: block; /* Removes extra space below the image */
     margin: 0 auto; /* Centers the image horizontally */
 }
+
+@media (max-width: 768px) {
+    .title-banner img {
+        object-fit: contain; /* Ensures no part of the image is cut off on small screens */
+    }
+}
