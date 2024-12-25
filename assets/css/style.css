@@ -29,9 +29,16 @@ h1, h2 {
     text-align: center;
 }
 
-.hero-section h1 {
+.hero-title {
     font-size: 2.5rem;
+    text-align: center;
     margin-bottom: 1rem;
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .hero-section p {
@@ -192,7 +199,7 @@ footer {
 
 /* Header Titles */
 .header-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 1rem;
     background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00);
@@ -212,27 +219,6 @@ nav {
     padding: 1rem 2rem;
     flex-wrap: wrap;
     position: relative;
-}
-
-/* Navigation Links */
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #FFD700; /* Gold for hover */
-}
-
-/* Language Modal Styling */
-.modal-content {
-    background-color: #001f3f;
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
-    border-radius: 10px;
 }
 
 /* Hamburger Menu Styling */
