@@ -47,33 +47,7 @@ h1, h2, h3 {
     background-color: #d4af37;
 }
 
-/* Services Section */
-.services-section {
-    padding: 3rem 2rem;
-    text-align: center;
-    background-color: #f8f9fa;
-}
 
-.services-grid {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.service-item {
-    background: #fff;
-    padding: 1.5rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    width: 300px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.service-item h3 {
-    color: #002855;
-    margin-bottom: 1rem;
-}
 
 /* My Journey and Mission Section */
 .about-section {
@@ -99,6 +73,55 @@ blockquote {
     margin: 2rem auto;
     color: #002855;
     max-width: 700px;
+}
+
+/* Services Section */
+.services-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.services-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #002855;
+    font-weight: bold;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+    color: #002855;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
 }
 
 /* Call to Action Section */
