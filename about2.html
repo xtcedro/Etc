@@ -3,27 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dominguez Tech Solutions offers Fast, affordable iPhone and computer repairs, custom software development, and website design in Oklahoma City. Quality service with a 24-hour turnaround.">
-    <title>Home - Dominguez Tech Solutions</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Learn more about Pedro Dominguez, founder of Dominguez Tech Solutions. Discover his journey, mission, and commitment to empowering Oklahoma businesses with affordable technology solutions.">
+    <title>About - Dominguez Tech Solutions</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <script>
-        // Toggle mobile menu
-        function toggleMenu() {
-            document.querySelector('.mobile-menu').classList.toggle('show');
+        function toggleMobileMenu() {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("show");
+        }
+
+        function setLanguage(lang) {
+            if (lang === 'es') {
+                window.location.href = 'about_es.html'; // Redirect to Spanish version
+            } else {
+                document.getElementById('language-modal').style.display = 'none';
+            }
+        }
     </script>
 </head>
+
 <body>
+    <!-- Language Selection Modal -->
+    <div id="language-modal" class="modal">
+        <div class="modal-content">
+            <h2>Select Your Language</h2>
+            <div class="language-options">
+                <button onclick="setLanguage('en')">
+                    <img src="assets/images/us-flag.png" alt="English" class="flag-icon"> English
+                </button>
+                <button onclick="setLanguage('es')">
+                    <img src="assets/images/mx-flag.png" alt="Español" class="flag-icon"> Español
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Header Section -->
     <header>
-        <h1>Dominguez Tech Solitions</h1>
-        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="title-banner">
+            <img src="assets/images/banner.png" alt="Dominguez Tech Solutions">
+        </div>
     </header>
-   
+
+    <!-- Navigation -->
+    <nav class="mobile-nav">
+        <div class="hamburger" onclick="toggleMobileMenu()">&#9776;</div>
+        <ul id="mobile-menu" class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="appointments.html">Appointments</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="offers.html">Special Offers</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- Hero Section -->
     <section class="hero-section">
         <h1 class="hero-title">About Pedro Dominguez</h1>
         <p class="hero-subtitle">Tech Enthusiast • Devoted Catholic • Innovator • IT Consultant</p>
     </section>
 
+    <!-- About Section -->
     <section class="about-section">
         <h2>My Journey and Mission</h2>
         <p>
@@ -33,9 +83,9 @@
             reliable technology solutions.
         </p>
         <p>
-          I have years of hands-on experience fixing tech problems and helping people get the most out of their devices. I'm skilled with Linux systems, can set up and manage servers on AWS, and offer advice on purchasing domains to get your business online. I also create professional, user-friendly websites that fit your needs, making the process simple and efficient.
+            I have years of hands-on experience fixing tech problems and helping people get the most out of their devices. I'm skilled with Linux systems, can set up and manage servers on AWS, and offer advice on purchasing domains to get your business online. I also create professional, user-friendly websites that fit your needs, making the process simple and efficient.
 
-Lately, I’ve been diving into software development, picking up new skills quickly to better serve my clients. Whether it’s tech repairs, websites, or server setups, I’m here to provide fast, affordable, and reliable solutions for the people and businesses of Oklahoma. I am committed to delivering <strong>transparent</strong>, <strong>fair</strong>, and <strong>secure</strong> digital services 
+            Lately, I’ve been diving into software development, picking up new skills quickly to better serve my clients. Whether it’s tech repairs, websites, or server setups, I’m here to provide fast, affordable, and reliable solutions for the people and businesses of Oklahoma. I am committed to delivering <strong>transparent</strong>, <strong>fair</strong>, and <strong>secure</strong> digital services 
             that empower our community.
         </p>
         <blockquote>
@@ -44,6 +94,7 @@ Lately, I’ve been diving into software development, picking up new skills quic
         </blockquote>
     </section>
 
+    <!-- Oklahoma Section -->
     <section class="oklahoma-section">
         <h2>Why Oklahoma Will Lead the Charge</h2>
         <p>
@@ -52,7 +103,8 @@ Lately, I’ve been diving into software development, picking up new skills quic
         </p>
     </section>
 
-        <section class="call-to-action-section">
+    <!-- Call to Action Section -->
+    <section class="call-to-action-section">
         <h2>A Call to Leaders and Innovators</h2>
         <p>
             <strong>Oil Giants</strong> like ExxonMobil — your expertise and resources can fuel a new era of prosperity.
@@ -63,9 +115,11 @@ Lately, I’ve been diving into software development, picking up new skills quic
         <p>
             <strong>Governor of Oklahoma</strong> — together, let’s pave the way for a fairer, brighter future for every citizen.
         </p>
-        </section>
-            <footer>
+    </section>
+
+    <!-- Footer -->
+    <footer>
         <p>&copy; 2024 Dominguez Tech Solutions. All rights reserved.</p>
-            </footer>
-    </body>
+    </footer>
+</body>
 </html>
