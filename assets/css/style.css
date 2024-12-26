@@ -662,10 +662,16 @@ form .success-message {
         padding: 0.6rem 1rem; /* Adjust button size */
     }
 
+    /* Adjusted .title-banner Styling */
+    .title-banner {
+        padding: 1rem 0; /* Add spacing for mobile */
+        background-color: #f8f8f8; /* Optional: light background for contrast */
+    }
+
     .title-banner img {
-        max-width: 90%; /* Reduce width */
+        max-width: 100%; /* Ensure full responsiveness */
         height: auto;
-        margin: 0 auto;
+        margin: 0 auto; /* Center the image */
     }
 
     .services-container {
@@ -709,6 +715,18 @@ form .success-message {
         padding: 0.8rem 1.2rem; /* Adjust button size */
     }
 
+    /* Adjusted .title-banner Styling */
+    .title-banner {
+        padding: 1.5rem 0; /* Slightly more padding for tablet view */
+        background-color: #ffffff; /* Optional: neutral background */
+    }
+
+    .title-banner img {
+        max-width: 90%; /* Slightly reduce size for tablets */
+        height: auto;
+        margin: 0 auto;
+    }
+
     .services-container {
         flex-wrap: wrap; /* Allow wrapping of items */
         gap: 1rem;
@@ -723,4 +741,3 @@ form .success-message {
         font-size: 0.9rem;
     }
 }
-
