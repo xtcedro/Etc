@@ -722,9 +722,3 @@ form .success-message {
     }
 }
 
-/* Desktop View: Explicitly hide the hamburger menu */
-@media (min-width: 1025px) {
-    .hamburger {
-        display: none !important;
-    }
-}
