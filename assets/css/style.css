@@ -62,21 +62,7 @@ h1, h2 {
     transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 1.8rem;
-    }
 
-    .hero-section p {
-        font-size: 1rem;
-        line-height: 1.4;
-    }
-
-    .cta-button {
-        font-size: 0.9rem;
-        padding: 0.6rem 1rem;
-    }
-}
 
 /* Title Banner */
 .title-banner {
@@ -151,16 +137,6 @@ nav a:hover {
     transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-        z-index: 1010;
-    }
-
-    .desktop-nav {
-        display: none;
-    }
-}
 
 /* Mobile Menu */
 .mobile-menu {
@@ -739,60 +715,112 @@ form .success-message {
     text-decoration: underline; /* Adds underline on hover */
 }
 
-/* Tablet View Styling (768px to 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* Mobile View Styling (max-width: 767px) */
+@media (max-width: 767px) {
+    /* Body Styling */
     body {
-        font-size: 16px; /* Adjust base font size */
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
     }
 
     /* Navigation Bar Adjustments */
     nav {
-        justify-content: space-around; /* Space out links evenly */
-        padding: 1rem; /* Reduce padding */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        padding: 1rem;
     }
 
     nav a {
-        font-size: 1rem; /* Adjust font size */
-        padding: 0.5rem 1rem; /* Reduce padding */
+        font-size: 0.85rem; /* Smaller font size */
+        padding: 0.5rem; /* Adjust padding */
+        text-align: center;
+        width: 100%; /* Full-width links */
     }
 
     .hamburger {
-        font-size: 2rem; /* Increase icon size */
+        font-size: 2rem;
+        margin-bottom: 1rem; /* Add spacing below menu icon */
     }
 
     /* Hero Section Adjustments */
+    .hero-section {
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
+    }
+
     .hero-title {
-        font-size: 2rem; /* Slightly smaller title */
+        font-size: 1.6rem; /* Resize title */
+        margin-bottom: 1rem;
     }
 
     .hero-section p {
-        font-size: 1.1rem; /* Reduce paragraph size */
-        line-height: 1.5; /* Adjust spacing */
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 1.5rem;
     }
 
     .cta-button {
-        font-size: 1rem; /* Slightly larger button text */
-        padding: 0.8rem 1.2rem; /* Adjust padding */
+        font-size: 0.85rem;
+        padding: 0.6rem 1rem; /* Adjust button size */
     }
 
-    /* Title Banner Adjustments */
+    /* Title Banner */
     .title-banner img {
-        max-height: 200px; /* Limit image height */
+        max-width: 90%; /* Reduce width */
+        height: auto;
+        margin: 0 auto;
     }
 
     /* Services Section */
     .services-container {
-        gap: 1rem; /* Reduce spacing */
-        justify-content: space-around; /* Adjust alignment */
+        flex-direction: column; /* Stack items vertically */
+        gap: 1rem;
     }
 
     .service-item {
-        width: 45%; /* Allow two items per row */
+        width: 90%; /* Use almost full width */
+        margin: 0 auto; /* Center the items */
     }
 
-    /* Footer Adjustments */
+    /* Footer */
     footer {
-        padding: 1.5rem; /* Increase padding */
-        font-size: 0.9rem; /* Slightly larger font size */
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Tablet View Adjustments (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        justify-content: space-between; /* Evenly distribute items */
+        padding: 1rem 1.5rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .hero-title {
+        font-size: 2rem; /* Adjust title size for tablets */
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem; /* Adjust button size */
+    }
+
+    .services-container {
+        flex-wrap: wrap; /* Allow wrapping of items */
+        gap: 1rem;
+    }
+
+    .service-item {
+        width: 45%; /* Two items per row */
+    }
+
+    footer {
+        padding: 1.5rem;
+        font-size: 0.9rem;
     }
 }
