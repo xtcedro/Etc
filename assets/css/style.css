@@ -615,39 +615,37 @@ form .success-message {
 
 /* Mobile View Styling (max-width: 767px) */
 @media (max-width: 767px) {
-    /* Body Styling */
     body {
         font-size: 14px;
         margin: 0;
         padding: 0;
     }
 
-    /* Navigation Bar Adjustments */
     nav {
-        flex-direction: column;
+        flex-direction: column; /* Stack items vertically */
         align-items: center;
         padding: 1rem;
     }
 
     nav a {
-        font-size: 0.85rem;
-        padding: 0.5rem;
+        font-size: 0.85rem; /* Smaller font size */
+        padding: 0.5rem; /* Adjust padding */
         text-align: center;
-        width: 100%;
+        width: 100%; /* Full-width links */
     }
 
     .hamburger {
-        font-size: 2rem;
-        margin-bottom: 1rem;
+        display: block; /* Show hamburger menu on smaller screens */
+        font-size: 1.5rem; /* Ensure proper sizing */
+        margin-bottom: 1rem; /* Add spacing below menu icon */
     }
 
-    /* Hero Section Adjustments */
     .hero-section {
-        padding: 2rem 1rem;
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
     }
 
     .hero-title {
-        font-size: 1.6rem;
+        font-size: 1.6rem; /* Resize title */
         margin-bottom: 1rem;
     }
 
@@ -659,70 +657,39 @@ form .success-message {
 
     .cta-button {
         font-size: 0.85rem;
-        padding: 0.6rem 1rem;
+        padding: 0.6rem 1rem; /* Adjust button size */
     }
 
-    /* Title Banner */
     .title-banner img {
-        max-width: 90%;
+        max-width: 90%; /* Reduce width */
         height: auto;
         margin: 0 auto;
     }
 
-    /* Services Section */
     .services-container {
-        flex-direction: column;
+        flex-direction: column; /* Stack items vertically */
         gap: 1rem;
     }
 
     .service-item {
-        width: 90%;
-        margin: 0 auto;
+        width: 90%; /* Use almost full width */
+        margin: 0 auto; /* Center the items */
     }
 
-    /* Footer */
     footer {
         padding: 1rem;
         font-size: 0.8rem;
-    }
-
-    /* Responsive Form Styling */
-    .form-container {
-        padding: 1rem;
-        max-width: 90%;
-    }
-
-    form button {
-        font-size: 0.9rem;
-    }
-
-    input,
-    textarea {
-        font-size: 0.9rem;
-    }
-
-    /* Modal Content */
-    .modal-content {
-        font-size: 1.2rem;
-        padding: 1.5rem;
-    }
-
-    .language-options button {
-        padding: 0.75rem 1rem;
-        font-size: 1rem;
-    }
-
-    .flag-icon {
-        width: 28px;
-        height: 28px;
     }
 }
 
 /* Tablet View Adjustments (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
-    /* Navigation Bar */
+    body {
+        font-size: 16px; /* Adjust base font size */
+    }
+
     nav {
-        justify-content: space-between;
+        justify-content: space-between; /* Evenly distribute items */
         padding: 1rem 1.5rem;
     }
 
@@ -731,48 +698,33 @@ form .success-message {
         padding: 0.5rem 1rem;
     }
 
-    /* Hero Section Adjustments */
     .hero-title {
-        font-size: 2rem;
+        font-size: 2rem; /* Adjust title size for tablets */
     }
 
     .cta-button {
         font-size: 1rem;
-        padding: 0.8rem 1.2rem;
+        padding: 0.8rem 1.2rem; /* Adjust button size */
     }
 
-    /* Services Section */
     .services-container {
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* Allow wrapping of items */
         gap: 1rem;
     }
 
     .service-item {
-        width: 45%;
+        width: 45%; /* Two items per row */
     }
 
-    /* Footer */
     footer {
         padding: 1.5rem;
         font-size: 0.9rem;
     }
 }
 
-/* Default: Hide the hamburger menu by default */
-.hamburger {
-    display: none;
-}
-
-/* Mobile and Tablet View: Show the hamburger menu */
-@media (max-width: 1024px) {
-    .hamburger {
-        display: block;
-    }
-}
-
-/* Desktop View: Ensure the hamburger menu is hidden */
+/* Desktop View: Explicitly hide the hamburger menu */
 @media (min-width: 1025px) {
     .hamburger {
-        display: none;
+        display: none !important;
     }
 }
