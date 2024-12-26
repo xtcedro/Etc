@@ -545,16 +545,16 @@ form textarea {
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
 }
-
 /* Floating Labels */
 .floating-label {
     position: relative;
     margin-bottom: 1.5rem;
 }
 
-.floating-label input {
+.floating-label input,
+.floating-label textarea {
     width: 100%;
-    padding: 0.75rem 10px 0.75rem 0; /* Adjust padding for floating label */
+    padding: 0.75rem 0.5rem; /* Adjust padding for proper text alignment */
     border: 1px solid #004080; /* Input border */
     border-radius: 5px; /* Rounded corners */
     background-color: #003366; /* Input background */
@@ -565,20 +565,38 @@ form textarea {
 
 .floating-label label {
     position: absolute;
-    top: 10px;
-    left: 0;
+    top: 50%; /* Center vertically */
+    left: 0.5rem; /* Align with padding */
     font-size: 1rem;
-    color: #ffcc00;
+    color: #ffcc00; /* Gold label color */
+    pointer-events: none; /* Prevent interaction with the label */
+    transform: translateY(-50%); /* Center transform */
     transition: all 0.3s ease;
-    pointer-events: none;
 }
 
+/* When input is focused or has content */
 .floating-label input:focus + label,
-.floating-label input:not(:placeholder-shown) + label {
-    top: -20px;
-    left: 0;
-    font-size: 0.85rem;
+.floating-label textarea:focus + label,
+.floating-label input:not(:placeholder-shown) + label,
+.floating-label textarea:not(:placeholder-shown) + label {
+    top: -0.8rem; /* Move above the input */
+    left: 0.5rem; /* Align with padding */
+    font-size: 0.85rem; /* Smaller font size */
     color: #FFD700; /* Gold color for active label */
+}
+
+/* Placeholder Styling */
+.floating-label input::placeholder,
+.floating-label textarea::placeholder {
+    color: transparent; /* Hide placeholder text */
+}
+
+/* Focus State */
+.floating-label input:focus,
+.floating-label textarea:focus {
+    border-color: #FFD700; /* Gold border on focus */
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.7); /* Gold glow */
+    outline: none;
 }
 
 .form-container textarea {
@@ -591,21 +609,6 @@ form textarea {
     color: #ffffff;
     font-size: 1rem;
     resize: vertical; /* Allow vertical resizing */
-}
-
-/* Focus State */
-.floating-label input:focus,
-textarea:focus {
-    border-color: #FFD700; /* Gold border on focus */
-    box-shadow: 0 0 5px rgba(255, 215, 0, 0.7); /* Gold glow */
-    outline: none;
-}
-
-/* Placeholder Styling */
-.floating-label input::placeholder,
-textarea::placeholder {
-    color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
-    font-style: italic;
 }
 
 /* Form Buttons */
