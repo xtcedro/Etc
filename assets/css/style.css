@@ -62,13 +62,15 @@ h1, h2 {
     transform: scale(1.05);
 }
 
-/* Title Banner */
+/* Default: Desktop Styling */
 .title-banner {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     overflow: hidden;
+    padding: 20px;
+    background-color: #f5f5f5; /* Optional: Add a background color */
 }
 
 .title-banner img {
