@@ -824,3 +824,22 @@ form .success-message {
         font-size: 0.9rem;
     }
 }
+
+/* Default: Hide the hamburger menu by default */
+.hamburger {
+    display: none; /* Hidden by default */
+}
+
+/* Mobile and Tablet View: Show the hamburger menu */
+@media (max-width: 1024px) {
+    .hamburger {
+        display: block; /* Show hamburger menu on smaller screens */
+    }
+}
+
+/* Desktop View: Ensure the hamburger menu is hidden */
+@media (min-width: 1025px) {
+    .hamburger {
+        display: none; /* Hide on desktops */
+    }
+}
