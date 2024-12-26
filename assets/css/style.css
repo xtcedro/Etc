@@ -738,3 +738,61 @@ form .success-message {
     color: #007BFF; /* Changes color on hover (use your theme's accent color) */
     text-decoration: underline; /* Adds underline on hover */
 }
+
+/* Tablet View Styling (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px; /* Adjust base font size */
+    }
+
+    /* Navigation Bar Adjustments */
+    nav {
+        justify-content: space-around; /* Space out links evenly */
+        padding: 1rem; /* Reduce padding */
+    }
+
+    nav a {
+        font-size: 1rem; /* Adjust font size */
+        padding: 0.5rem 1rem; /* Reduce padding */
+    }
+
+    .hamburger {
+        font-size: 2rem; /* Increase icon size */
+    }
+
+    /* Hero Section Adjustments */
+    .hero-title {
+        font-size: 2rem; /* Slightly smaller title */
+    }
+
+    .hero-section p {
+        font-size: 1.1rem; /* Reduce paragraph size */
+        line-height: 1.5; /* Adjust spacing */
+    }
+
+    .cta-button {
+        font-size: 1rem; /* Slightly larger button text */
+        padding: 0.8rem 1.2rem; /* Adjust padding */
+    }
+
+    /* Title Banner Adjustments */
+    .title-banner img {
+        max-height: 200px; /* Limit image height */
+    }
+
+    /* Services Section */
+    .services-container {
+        gap: 1rem; /* Reduce spacing */
+        justify-content: space-around; /* Adjust alignment */
+    }
+
+    .service-item {
+        width: 45%; /* Allow two items per row */
+    }
+
+    /* Footer Adjustments */
+    footer {
+        padding: 1.5rem; /* Increase padding */
+        font-size: 0.9rem; /* Slightly larger font size */
+    }
+}
