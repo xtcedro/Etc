@@ -687,3 +687,27 @@ form .success-message {
         font-size: 0.9rem; /* Adjust input text size */
     }
 }
+
+.legal-links {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Aligns items horizontally */
+    justify-content: center; /* Centers items */
+    gap: 10px; /* Adds spacing between items */
+    font-size: 14px; /* Makes the text slightly smaller */
+}
+
+.legal-links li {
+    display: inline; /* Ensures list items are inline */
+}
+
+.legal-links a {
+    text-decoration: none; /* Removes underline */
+    color: #555; /* Sets a neutral text color */
+}
+
+.legal-links a:hover {
+    color: #007BFF; /* Changes color on hover (use your theme's accent color) */
+    text-decoration: underline; /* Adds underline on hover */
+}
