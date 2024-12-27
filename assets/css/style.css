@@ -729,3 +729,15 @@ form .success-message {
     display: none !important;
   }
 }
+
+/* Adjusted .title-banner Styling */
+.title-banner {
+  padding: 1.5rem 0; /* Slightly more padding */
+  background-color: #ffffff; /* Optional: Set background color */
+}
+
+.title-banner img {
+  max-width: 100%; /* Slightly reduce size */
+  height: auto;
+  margin: 0 auto;
+}
