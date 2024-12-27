@@ -732,11 +732,18 @@ form .success-message {
 
 /* Adjusted .title-banner Styling */
 .title-banner {
-  padding: 1.5rem 0; /* Slightly more padding */
-  background-color: #ffffff; /* Optional: Set background color */
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Optional: Set background color */
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .title-banner img {
+  display: block;
   max-width: 100%; /* Slightly reduce size */
   height: auto;
   margin: 0 auto;
