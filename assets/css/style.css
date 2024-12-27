@@ -191,6 +191,30 @@ footer {
     max-width: 900px;
 }
 
+.about-section h2 {
+    font-size: 1.8rem;
+    color: #ffcc00; /* Gold color */
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.about-section a {
+    color: #ffcc00; /* Gold for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.about-section a:hover {
+    color: #d4af37; /* Lighter gold on hover */
+}
+
+
 /* Blockquote Styling */
 blockquote {
     font-style: italic;
@@ -580,7 +604,7 @@ form .success-message {
     display: flex; /* Aligns items horizontally */
     justify-content: center; /* Centers items */
     gap: 10px; /* Adds spacing between items */
-    font-size: 14px; /* Makes the text slightly smaller */
+    font-size: 22px; /* Makes the text slightly smaller */
 }
 
 .legal-links li {
