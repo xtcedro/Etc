@@ -4,24 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contacta a Dominguez Tech Solutions para consultas o soporte.">
-    <title>Contáctanos</title>
+    <title>Contáctanos - Dominguez Tech Solutions</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
     <header>
-        <h1>Contacta a Dominguez Tech Solutions</h1>
+        <h1 class="header-title">Dominguez Tech Solutions</h1>
+        <div class="title-banner">
+            <img src="/assets/images/banner1.png" alt="Dominguez Tech Solutions">
+        </div>
     </header>
 
-    <main>
+    <div class="desktop-nav">
+        <a href="index_es.html">Inicio</a>
+        <a href="about_es.html">Sobre Nosotros</a>
+        <a href="about2_es.html">Sobre Pedro Dominguez</a>
+        <a href="services_es.html">Servicios</a>
+        <a href="appointments_es.html">Citas</a>
+        <a href="offers_es.html">Ofertas Especiales</a>
+        <a href="contact_es.html" class="active">Contáctanos</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1 class="hero-title">Contáctanos</h1>
+        <p class="hero-subtitle">Ponte en contacto con Dominguez Tech Solutions para todas tus necesidades tecnológicas.</p>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="form-container">
+        <h2>Envíanós un Mensaje</h2>
         <form action="/assets/php/contact_form_handler.php" method="POST">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
+            <div class="floating-label">
+                <input type="text" id="name" name="name" placeholder=" " required>
+                <label for="name">Nombre Completo</label>
+            </div>
+            <div class="floating-label">
+                <input type="email" id="email" name="email" placeholder=" " required>
+                <label for="email">Correo Electrónico</label>
+            </div>
+            <div class="floating-label">
+                <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                <label for="message">Mensaje</label>
+            </div>
 
             <!-- CAPTCHA Image -->
             <img src="/assets/php/captcha.php" alt="CAPTCHA">
@@ -33,8 +58,17 @@
 
             <button type="submit">Enviar</button>
         </form>
-    </main>
+    </section>
 
+    <!-- Contact Information Section -->
+    <section class="about-section">
+        <h2>Información de Contacto</h2>
+        <p>Si prefieres, puedes contactarnos directamente por correo electrónico o teléfono:</p>
+        <p><strong>Correo Electrónico:</strong> <a href="mailto:domingueztechsolutions@gmail.com">domingueztechsolutions@gmail.com</a></p>
+        <p><strong>Teléfono:</strong> <a href="tel:+15399015819">+1 (539) 901-5819</a></p>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Dominguez Tech Solutions. Todos los derechos reservados.</p>
     </footer>

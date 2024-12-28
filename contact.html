@@ -3,40 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Dominguez Tech Solutions for inquiries or support.">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <meta name="description" content="Contact Dominguez Tech Solutions for reliable and affordable tech services in the Oklahoma City metro area.">
+    <title>Contact Us - Dominguez Tech Solutions</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Contact Dominguez Tech Solutions</h1>
+        <h1 class="header-title">Dominguez Tech Solutions</h1>
+        <div class="title-banner">
+            <img src="assets/images/banner1.png" alt="Dominguez Tech Solutions">
+        </div>
     </header>
 
-    <main>
-        <form action="assets/php/contact_form_handler.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <div class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="about2.html">About Pedro Dominguez</a>
+        <a href="services.html">Services</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="offers.html">Special Offers</a>
+        <a href="contact.html" class="active">Contact Us</a>
+    </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1 class="hero-title">Contact Us</h1>
+        <p class="hero-subtitle">Get in touch with Dominguez Tech Solutions for all your tech needs.</p>
+    </section>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+    <!-- Contact Form -->
+    <section class="form-container">
+        <h2>Send Us a Message</h2>
+        <form action="/assets/php/contact_form_handler.php" method="POST">
+            <div class="floating-label">
+                <input type="text" id="name" name="name" placeholder=" " required>
+                <label for="name">Full Name</label>
+            </div>
+            <div class="floating-label">
+                <input type="email" id="email" name="email" placeholder=" " required>
+                <label for="email">Email Address</label>
+            </div>
+            <div class="floating-label">
+                <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                <label for="message">Message</label>
+            </div>
 
             <!-- CAPTCHA Image -->
-            <img src="assets/php/captcha.php" alt="CAPTCHA">
+            <img src="/assets/php/captcha.php" alt="CAPTCHA">
             <label for="captcha">Enter CAPTCHA:</label>
             <input type="text" id="captcha" name="captcha" required>
 
             <!-- Honeypot Field (Hidden) -->
             <input type="text" name="honeypot" style="display: none;">
 
-            <button type="submit">Send</button>
+            <button type="submit">Submit</button>
         </form>
-    </main>
+    </section>
 
+    <!-- Contact Information Section -->
+    <section class="about-section">
+        <h2>Contact Information</h2>
+        <p>If you prefer, you can reach us directly via email or phone:</p>
+        <p><strong>Email:</strong> <a href="mailto:domingueztechsolutions@gmail.com">domingueztechsolutions@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+15399015819">+1 (539) 901-5819</a></p>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Dominguez Tech Solutions. All rights reserved.</p>
+        <ul class="legal-links">
+            <li><a href="terms.html">Terms and Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="warranty.html">Warranty Policy</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
+            <li><a href="accessibility.html">Accessibility Statement</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
     </footer>
 </body>
 </html>
