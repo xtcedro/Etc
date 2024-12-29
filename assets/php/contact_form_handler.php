@@ -1,9 +1,4 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require '/var/www/html/assets/php/vendor/autoload.php';
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     session_start();
 
@@ -37,36 +32,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    // Email setup using PHPMailer
-    $mail = new PHPMailer(true);
+    // Email setup using PHP mail()
+    $to = "domingueztechsolutions@gmail.com";
+    $subject = "New Contact Form Submission";
+    $body = "You have received a new message from your contact form:\n\n" .
+            "Name: $name\n" .
+            "Email: $email\n" .
+            "Message:\n$message\n";
+    $headers = "From: no-reply@domingueztechsolutions.com\r\n";
+    $headers .= "Reply-To: $email\r\n";
 
-    try {
-        // Server settings
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com'; // Set the SMTP server
-        $mail->SMTPAuth = true;
-        $mail->Username = ''; // Replace with your Gmail address
-        $mail->Password = ''; // Replace with your Gmail app password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
-
-        // Recipients
-        $mail->setFrom('no-reply@domingueztechsolutions.com', 'No Reply');
-        $mail->addAddress('domingueztechsolutions@gmail.com');
-        $mail->addReplyTo($email, $name);
-
-        // Content
-        $mail->isHTML(false);
-        $mail->Subject = "New Contact Form Submission";
-        $mail->Body = "You have received a new message from your contact form:\n\n" .
-                      "Name: $name\n" .
-                      "Email: $email\n" .
-                      "Message:\n$message\n";
-
-        $mail->send();
+    // Send the email
+    if (mail($to, $subject, $body, $headers)) {
         echo "Thank you for your message. We will get back to you soon.";
-    } catch (Exception $e) {
-        echo "There was an error sending your message. Mailer Error: {$mail->ErrorInfo}";
+    } else {
+        echo "There was an error sending your message. Please try again later.";
     }
 } else {
     echo "Invalid request.";

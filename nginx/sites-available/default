@@ -1,24 +1,9 @@
 ##
-# You should look at the following URL's in order to grasp a solid understanding
-# of Nginx configuration files in order to fully unleash the power of Nginx.
-# https://www.nginx.com/resources/wiki/start/
-# https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/
-# https://wiki.debian.org/Nginx/DirectoryStructure
-#
-# In most cases, administrators will remove this file from sites-enabled/ and
-# leave it as reference inside of sites-available where it will continue to be
-# updated by the nginx packaging team.
-#
-# This file will automatically load configuration files provided by other
-# applications, such as Drupal or Wordpress. These applications will be made
-# available underneath a path with that package name, such as /drupal8.
-#
-# Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
+# Updated Nginx configuration with enhancements for security, performance, and rate-limiting
 ##
 
 # Default server configuration
 server {
-
     server_name domingueztechsolutions.com www.domingueztechsolutions.com;
 
     # SSL configuration
@@ -29,6 +14,11 @@ server {
     include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
 
+    # Enhanced SSL security
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers 'ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305';
+    ssl_prefer_server_ciphers on;
+
     root /var/www/html;
 
     # Add index.php to the list if you are using PHP
@@ -37,9 +27,16 @@ server {
     # PHP handling
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
-        fastcgi_pass unix:/run/php/php7.4-fpm.sock; # Adjust PHP version if necessary
+        fastcgi_pass unix:/run/php/php8.1-fpm.sock; # Adjust PHP version if necessary
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include fastcgi_params;
+    }
+
+    # Serve static files with caching
+    location ~* \.(jpg|jpeg|png|gif|ico|css|js|svg|woff|woff2|ttf|eot|otf|webp|avif)$ {
+        expires 6M;
+        access_log off;
+        add_header Cache-Control "public";
     }
 
     # Serve static files
@@ -52,10 +49,22 @@ server {
         deny all; # Restrict direct access to PHP files
     }
 
-    # Allow only contact-handler-form.php for POST requests
+    # Allow only contact-handler-form.php for POST requests with rate limiting
+    limit_req_zone $binary_remote_addr zone=one:10m rate=5r/s; # Configure rate limit
     location /assets/php/contact_form_handler.php {
+        limit_req zone=one burst=10; # Apply rate limiting
+        access_log /var/log/nginx/contact_form.log; # Log access to this endpoint
         allow all;
         limit_except POST { deny all; } # Only allow POST requests
+    }
+
+    # Deny access to hidden files and sensitive directories
+    location ~ /\. {
+        deny all;
+    }
+
+    location ~* (\.git|\.svn|\.env|composer\.json|composer\.lock) {
+        deny all;
     }
 
     # Deny access to .htaccess files
@@ -64,18 +73,20 @@ server {
     }
 }
 
+# HTTP to HTTPS redirection
 server {
-    if ($host = www.domingueztechsolutions.com) {
-        return 301 https://$host$request_uri;
-    } # managed by Certbot
-
-    if ($host = domingueztechsolutions.com) {
-        return 301 https://$host$request_uri;
-    } # managed by Certbot
-
-    listen 80 default_server;
-    listen [::]:80 default_server;
+    listen 80;
+    listen [::]:80;
 
     server_name domingueztechsolutions.com www.domingueztechsolutions.com;
-    return 404; # managed by Certbot
+    return 301 https://$host$request_uri;
+}
+
+# Wildcard redirect for any other HTTP traffic
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name _;
+    return 301 https://$host$request_uri;
 }
