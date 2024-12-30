@@ -274,6 +274,14 @@ form textarea {
     align-items: center;
     z-index: 1000;
     overflow: hidden; /* Prevents scrolling when the modal is open */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.show {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* Modal Content */
@@ -555,7 +563,7 @@ form .success-message {
     margin: 0; /* Removes default margin */
     display: flex; /* Aligns items horizontally */
     justify-content: center; /* Centers items */
-    gap: 10px; /* Adds spacing between items */
+    gap: 20px; /* Adds spacing between items */
     font-size: 22px; /* Makes the text slightly smaller */
 }
 
