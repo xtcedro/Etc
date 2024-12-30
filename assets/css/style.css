@@ -274,14 +274,7 @@ form textarea {
     align-items: center;
     z-index: 1000;
     overflow: hidden; /* Prevents scrolling when the modal is open */
-    opacity: 0;
-    visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.modal.show {
-    opacity: 1;
-    visibility: visible;
 }
 
 /* Modal Content */
