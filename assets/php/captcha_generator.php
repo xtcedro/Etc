@@ -23,7 +23,7 @@ function generateCaptcha() {
     }
 
     // Add the CAPTCHA text to the image
-    $font = __DIR__ . '/arial.ttf'; // Ensure this font file exists in the same directory
+    $font = __DIR__ . '/arial.ttf'; // Ensure arial.ttf is in the same directory
     imagettftext($image, 20, rand(-10, 10), rand(10, 60), rand(30, 40), $text_color, $font, $captcha_text);
 
     // Return the image resource
