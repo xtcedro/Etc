@@ -17,6 +17,7 @@
         </div>
     </header>
 
+    <!-- Desktop Navigation -->
     <div class="desktop-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -27,15 +28,22 @@
         <a href="contact.html" class="active">Contact Us</a>
     </div>
 
-	<!-- Hero Section -->
+    <!-- Hero Section -->
     <section class="hero-section">
         <h1 class="hero-title">Contact Us</h1>
-        <p class="hero-subtitle">Get in touch with Dominguez Tech Solutions for all your tech needs.</p>
+        <p class="hero-subtitle">We’re here to help with all your tech needs. Reach out today!</p>
+        <blockquote class="hero-quote">
+            <em>"Your technology partner for reliable and affordable solutions."</em>
+        </blockquote>
     </section>
 
-    <!-- Contact Form ---> 
+    <!-- Contact Form Section -->
     <section class="form-container">
         <h2>Send Us a Message</h2>
+        <p class="form-description">
+            Have questions or need assistance? Fill out the form below and we’ll get back to you within 24 hours. 
+            For urgent inquiries, please call us at <a href="tel:+15399015819">+1 (539) 901-5819</a>.
+        </p>
         <form action="/assets/php/contact_form_handler.php" method="POST">
             <div class="floating-label">
                 <input type="text" id="name" name="name" placeholder=" " required>
@@ -48,26 +56,31 @@
             <div class="floating-label">
                 <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
                 <label for="message">Message</label>
-			</div> -->
+            </div>
 
-			<!-- CAPTCHA Image --->
+            <!-- CAPTCHA Image -->
             <img src="/assets/php/captcha.php" alt="CAPTCHA">
-            <label for="captcha">Enter CAPTCHA:</label>
-			<input type="text" id="captcha" name="captcha" required> --->
+            <div class="floating-label">
+                <input type="text" id="captcha" name="captcha" placeholder=" " required>
+                <label for="captcha">Enter CAPTCHA</label>
+            </div>
 
-            <!-- Honeypot Field (Hidden) --->
+            <!-- Honeypot Field (Hidden) -->
             <input type="text" name="honeypot" style="display: none;">
 
             <button type="submit">Submit</button>
         </form>
-	</section>
+    </section>
 
     <!-- Contact Information Section -->
-    <section class="about-section">
+    <section class="contact-info">
         <h2>Contact Information</h2>
-		<p>If you prefer, you can reach us directly via email or phone:</p>
+        <p>
+            Reach us directly via email or phone. We’re committed to providing fast and effective assistance.
+        </p>
         <p><strong>Email:</strong> <a href="mailto:domingueztechsolutions@gmail.com">domingueztechsolutions@gmail.com</a></p>
         <p><strong>Phone:</strong> <a href="tel:+15399015819">+1 (539) 901-5819</a></p>
+        <p><strong>Address:</strong> 1611 Northwest 30th Street, Oklahoma City, Oklahoma 73118</p>
     </section>
 
     <!-- Footer -->
