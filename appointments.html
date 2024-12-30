@@ -17,7 +17,8 @@
         </div>
     </header>
 
-	<div class="desktop-nav">
+    <!-- Desktop Navigation -->
+    <div class="desktop-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="about2.html">About Pedro Dominguez</a>
@@ -30,44 +31,72 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <h1 class="hero-title">Book an Appointment</h1>
-        <p class="hero-subtitle">Reliable and affordable tech services tailored to your needs.</p>
+        <p class="hero-subtitle">Get fast, reliable, and affordable tech services that fit your schedule.</p>
+        <blockquote class="hero-quote">
+            <em>"Let us handle your tech challenges while you focus on what matters most."</em>
+        </blockquote>
     </section>
 
-    <!-- Appointments Form -->
+    <!-- Appointments Section -->
     <section class="form-container">
         <h2>Book Your Appointment</h2>
+        <p class="form-description">
+            We make it easy to schedule your tech service needs. Fill out the form below and let us know your preferred date and time. 
+            A team member will confirm your appointment shortly. Need help right away? Call us at <a href="tel:+15399015819">+1 (539) 901-5819</a>.
+        </p>
         <form action="/submit_appointment" method="post">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+            <div class="floating-label">
+                <input type="text" id="name" name="name" required placeholder=" ">
+                <label for="name">Full Name</label>
+            </div>
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
+            <div class="floating-label">
+                <input type="email" id="email" name="email" required placeholder=" ">
+                <label for="email">Email Address</label>
+            </div>
 
-            <label for="date">Preferred Date:</label>
-            <input type="date" id="date" name="date" required>
+            <div class="floating-label">
+                <input type="date" id="date" name="date" required placeholder=" ">
+                <label for="date">Preferred Date</label>
+            </div>
 
-            <label for="time">Preferred Time:</label>
-            <input type="time" id="time" name="time" required>
+            <div class="floating-label">
+                <input type="time" id="time" name="time" required placeholder=" ">
+                <label for="time">Preferred Time</label>
+            </div>
 
-            <label for="message">Additional Notes:</label>
-            <textarea id="message" name="message" rows="5"></textarea>
+            <div class="floating-label">
+                <textarea id="message" name="message" rows="5" placeholder=" "></textarea>
+                <label for="message">Additional Notes</label>
+            </div>
 
-            <button type="submit">Book Appointment</button>
+            <button type="submit">Confirm Appointment</button>
         </form>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <h2>Why Choose Dominguez Tech Solutions?</h2>
+        <ul>
+            <li><strong>Speed:</strong> Most appointments are completed within 24 hours.</li>
+            <li><strong>Transparency:</strong> No hidden fees—just honest, reliable service.</li>
+            <li><strong>Expertise:</strong> Decades of experience solving complex tech challenges.</li>
+            <li><strong>Local Focus:</strong> Proudly serving the Oklahoma City metro area.</li>
+        </ul>
     </section>
 
     <!-- Footer -->
     <footer>
-    <p>&copy; 2024 Dominguez Tech Solutions. All rights reserved.</p>
-    <ul class="legal-links">
-        <li><a href="terms.html">Terms and Conditions</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="disclaimer.html">Disclaimer</a></li>
-        <li><a href="warranty.html">Warranty Policy</a></li>
-        <li><a href="refund.html">Refund Policy</a></li>
-        <li><a href="accessibility.html">Accessibility Statement</a></li>
-        <li><a href="cookies.html">Cookie Policy</a></li>
-    </ul>
-</footer>
+        <p>&copy; 2024 Dominguez Tech Solutions. All rights reserved.</p>
+        <ul class="legal-links">
+            <li><a href="terms.html">Terms and Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="warranty.html">Warranty Policy</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
+            <li><a href="accessibility.html">Accessibility Statement</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
