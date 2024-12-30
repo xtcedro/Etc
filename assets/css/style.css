@@ -646,27 +646,31 @@ html {
     background-color: #D35400; /* Darker orange on hover */
     transform: scale(1.05); /* Slight zoom effect */
 }
+
 /* Why Choose Us Section */
 .why-choose-us {
-    background-color: #f9f9f9; /* Light background for contrast */
-    padding: 50px 20px; /* Spacing for section */
+    background: linear-gradient(135deg, #FFD700, #FFC107); /* Gradient gold background */
+    padding: 60px 30px; /* More generous spacing for a modern feel */
     text-align: center;
-    border-top: 2px solid #ddd;
-    border-bottom: 2px solid #ddd;
+    border-radius: 10px; /* Rounded corners for a polished look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    color: #333; /* Text color for readability */
 }
 
 .why-choose-us h2 {
-    font-size: 2rem; /* Larger font for heading */
-    color: #333; /* Darker color for readability */
-    margin-bottom: 20px;
+    font-size: 2.5rem; /* Larger, impactful font size */
+    color: #fff; /* White color for better contrast on gold */
+    margin-bottom: 25px;
     text-transform: uppercase; /* Stylish uppercase headings */
+    letter-spacing: 2px; /* Add spacing between letters for elegance */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow to make text pop */
 }
 
 .why-choose-us p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 30px;
-    line-height: 1.6; /* Improve readability */
+    font-size: 1.2rem; /* Slightly larger text for readability */
+    color: #f8f8f8; /* Softer white for paragraphs */
+    margin-bottom: 35px;
+    line-height: 1.8; /* Enhanced readability */
 }
 
 .why-choose-us ul {
@@ -677,40 +681,44 @@ html {
 }
 
 .why-choose-us ul li {
-    font-size: 1rem;
-    color: #444;
-    margin-bottom: 15px;
+    font-size: 1.1rem; /* Slightly larger text for readability */
+    color: #fff; /* White text for contrast on gold */
+    margin-bottom: 20px;
     text-align: left; /* Align text to left */
-    padding-left: 20px; /* Add padding for icon spacing */
+    padding-left: 30px; /* Add padding for icon spacing */
     position: relative; /* For icon placement */
+    line-height: 1.6; /* Space out the list items */
 }
 
 .why-choose-us ul li::before {
-    content: "✓"; /* Add checkmark icon */
-    font-size: 1.2rem;
-    color: #007BFF; /* Blue color for icon */
+    content: "✔"; /* Replace checkmark with a more professional icon */
+    font-size: 1.5rem; /* Larger icon for emphasis */
+    color: #333; /* Dark icon for contrast */
     position: absolute;
     left: 0; /* Align icon to the left */
     top: 0;
+    transform: translateY(2px); /* Align vertically with text */
 }
 
 .why-choose-us button {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 20px;
-    background-color: #007BFF; /* Primary blue color */
-    color: #fff;
-    font-size: 1rem;
+    margin-top: 25px;
+    padding: 15px 25px; /* Larger padding for a prominent button */
+    background-color: #333; /* Dark button for contrast */
+    color: #FFD700; /* Gold text to tie into the theme */
+    font-size: 1.1rem;
     font-weight: bold;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px; /* Fully rounded for a modern look */
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .why-choose-us button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: scale(1.05); /* Slight zoom effect */
+    background-color: #fff; /* White button on hover */
+    color: #333; /* Dark text on hover */
+    transform: translateY(-5px) scale(1.1); /* Slight lift and zoom effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow for hover effect */
 }
 
 /* Mobile View Styling (max-width: 767px) */
