@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dominguez Tech Solutions ofrece reparaciones rápidas y asequibles de iPhone y computadoras, desarrollo de software personalizado y diseño de sitios web en Oklahoma City. Servicio de calidad con un tiempo de entrega de 24 horas.">
+    <meta name="description" content="Dominguez Tech Solutions ofrece reparaciones rápidas y asequibles de iPhones y computadoras, desarrollo de software personalizado y diseño de sitios web en la ciudad de Oklahoma. Servicio de calidad con un tiempo de entrega de 24 horas.">
     <title>Inicio - Dominguez Tech Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script>
         function setLanguage(lang) {
             if (lang === 'en') {
-                window.location.href = 'index.html'; // Redirect to English version
+                window.location.href = 'index.html'; // Redirige a la versión en inglés
             } else {
                 document.getElementById('language-modal').style.display = 'none';
             }
@@ -18,7 +18,22 @@
 </head>
 
 <body>
-    <!-- Header Section -->
+    <!-- Modal de Selección de Idioma -->
+    <div id="language-modal" class="modal">
+        <div class="modal-content">
+            <h2>Idioma / Language</h2>
+            <div class="language-options">
+                <button onclick="setLanguage('en')">
+                    <img src="assets/images/us-flag.png" alt="English" class="flag-icon"> English
+                </button>
+                <button onclick="setLanguage('es')">
+                    <img src="assets/images/mx-flag.png" alt="Español" class="flag-icon"> Español
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Encabezado -->
     <header>
         <h1 class="header-title">Dominguez Tech Solutions</h1>
         <div class="title-banner">
@@ -26,71 +41,82 @@
         </div>
     </header>
 
-    <!-- Desktop Navigation -->
+    <!-- Navegación en Escritorio -->
     <div class="desktop-nav">
         <a href="index_es.html" class="active">Inicio</a>
         <a href="about_es.html">Sobre Nosotros</a>
-        <a href="about2_es.html">Sobre Pedro Dominguez</a>
+        <a href="about2_es.html">Acerca de Pedro Dominguez</a>
         <a href="services_es.html">Servicios</a>
         <a href="appointments_es.html">Citas</a>
         <a href="offers_es.html">Ofertas Especiales</a>
         <a href="contact_es.html">Contáctenos</a>
     </div>
 
-    <!-- Hero Section -->
+    <!-- Sección Hero -->
     <section class="hero-section">
         <h1 class="hero-title">
-            Bienvenido a Dominguez Tech Solutions - Servicios Técnicos Rápidos, Confiables y Asequibles para el Área Metropolitana de Oklahoma City
+            Bienvenido a Dominguez Tech Solutions - Servicios Tecnológicos Rápidos, Confiables y Asequibles en Oklahoma City
         </h1>
         <p>
-            ¿Cansado de largos tiempos de espera y servicios costosos? En <strong>Dominguez Tech Solutions</strong>,
-            me especializo en <strong>reparaciones de iPhone, computadoras y laptops en 24 horas</strong>, así como en
-            <strong>desarrollo de software personalizado</strong> y <strong>diseño, desarrollo y despliegue de sitios web</strong>.
-            Mi misión es brindar <strong>servicios de alta calidad</strong> para individuos y negocios en Oklahoma City
-            a una fracción del costo de las grandes tiendas de reparación y desarrolladores independientes.
+            ¿Cansado de largos tiempos de espera y servicios costosos? En <strong>Dominguez Tech Solutions</strong>, 
+            nos especializamos en ofrecer <strong>reparaciones de iPhone, computadoras y laptops en 24 horas</strong>, 
+            junto con <strong>desarrollo de software personalizado</strong> y <strong>diseño de sitios web</strong>. 
+            Nuestra misión es proporcionar un servicio excepcional adaptado a tus necesidades, ¡a un precio que te encantará!
         </p>
-        <button class="cta-button" onclick="location.href='services_es.html'">Más Información</button>
+        <p>
+            Descubre la diferencia con soluciones tecnológicas personalizadas, transparentes y asequibles.
+        </p>
+        <button class="cta-button" onclick="location.href='services_es.html'">Descubre Nuestros Servicios</button>
     </section>
 
-    <!-- Services Section -->
+    <!-- Sección de Servicios -->
     <section id="services" class="services-section">
-        <h2>Nuestros Servicios</h2>
+        <h2>Lo Que Ofrecemos</h2>
         <div class="services-container">
             <div class="service-item">
-                <h3>Reparación de Computadoras</h3>
-                <p>Reparaciones rápidas y asequibles para todo tipo de computadoras, desde escritorios hasta laptops.</p>
+                <h3>📱 Reparaciones de iPhone</h3>
+                <p>Reparaciones el mismo día para pantallas rotas, reemplazos de batería y más. Precios asequibles con calidad garantizada.</p>
             </div>
             <div class="service-item">
-                <h3>Software Personalizado</h3>
-                <p>Desarrolle soluciones de software personalizadas para su negocio y optimice sus operaciones.</p>
+                <h3>💻 Reparaciones de Computadoras</h3>
+                <p>Desde eliminación de virus hasta actualizaciones de hardware, aseguramos que tus dispositivos funcionen como nuevos. Compatibles con todas las marcas y sistemas operativos.</p>
             </div>
             <div class="service-item">
-                <h3>Desarrollo de Sitios Web</h3>
-                <p>
-                    Obtenga un sitio web profesionalmente diseñado y completamente desplegado en solo 24 horas.
-                    Ya sea que sea un individuo o un negocio, disfrute de soluciones web rápidas, asequibles y personalizadas
-                    a una fracción del costo de los desarrolladores independientes.
-                </p>
+                <h3>⚙️ Desarrollo de Software Personalizado</h3>
+                <p>Optimiza tus operaciones con soluciones de software diseñadas a medida para tu negocio. Hagamos realidad tus ideas.</p>
             </div>
             <div class="service-item">
-                <h3>Reparación de iPhone</h3>
-                <p>Servicios de reparación de iPhone rápidos, confiables y asequibles para que su dispositivo funcione como nuevo.</p>
+                <h3>🌐 Desarrollo de Sitios Web</h3>
+                <p>Obtén un sitio web profesional y totalmente optimizado en solo 24 horas. Perfecto para negocios que quieren destacar en línea.</p>
             </div>
         </div>
+        <button class="cta-button" onclick="location.href='services_es.html'">Ver Todos los Servicios</button>
     </section>
 
-    <!-- Footer -->
+    <!-- Sección Por Qué Elegirnos -->
+    <section id="why-choose-us" class="why-choose-us-section">
+        <h2>¿Por Qué Elegir Dominguez Tech Solutions?</h2>
+        <ul>
+            <li><strong>⚡ Velocidad:</strong> Disfruta de un tiempo de entrega de 24 horas en la mayoría de los servicios, porque tu tiempo importa.</li>
+            <li><strong>💰 Asequibilidad:</strong> Soluciones de alta calidad a una fracción del costo de las grandes tiendas de reparación y desarrolladores independientes.</li>
+            <li><strong>🤝 Confiabilidad:</strong> Cuenta con nosotros para precios transparentes y un servicio al cliente excepcional en cada paso.</li>
+            <li><strong>🌟 Experiencia Local:</strong> Con orgullo servimos a Oklahoma City, comprendiendo las necesidades únicas de nuestra comunidad.</li>
+        </ul>
+        <button class="cta-button" onclick="location.href='appointments_es.html'">Reserva una Cita Hoy</button>
+    </section>
+
+    <!-- Pie de Página -->
     <footer>
-    <p>&copy; 2024 Dominguez Tech Solutions. Todos los derechos reservados.</p>
-    <ul class="legal-links">
-        <li><a href="terms_es.html">Términos y Condiciones</a></li>
-        <li><a href="privacy_es.html">Política de Privacidad</a></li>
-        <li><a href="disclaimer_es.html">Aviso Legal</a></li>
-        <li><a href="warranty_es.html">Política de Garantía</a></li>
-        <li><a href="refund_es.html">Política de Reembolsos</a></li>
-        <li><a href="accessibility_es.html">Declaración de Accesibilidad</a></li>
-        <li><a href="cookies_es.html">Política de Cookies</a></li>
-    </ul>
+        <p>&copy; 2024 Dominguez Tech Solutions. Todos los derechos reservados.</p>
+        <ul class="legal-links">
+            <li><a href="terms_es.html">Términos y Condiciones</a></li>
+            <li><a href="privacy_es.html">Política de Privacidad</a></li>
+            <li><a href="disclaimer_es.html">Aviso Legal</a></li>
+            <li><a href="warranty_es.html">Política de Garantía</a></li>
+            <li><a href="refund_es.html">Política de Reembolso</a></li>
+            <li><a href="accessibility_es.html">Declaración de Accesibilidad</a></li>
+            <li><a href="cookies_es.html">Política de Cookies</a></li>
+        </ul>
     </footer>
 </body>
 </html>
