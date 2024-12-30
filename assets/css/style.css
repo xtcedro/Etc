@@ -658,75 +658,81 @@ html {
 /* Why Choose Us Section */
 .why-choose-us {
     background: linear-gradient(135deg, #FFD700, #FFC107); /* Gradient gold background */
-    padding: 70px 40px; /* Generous spacing for a modern and luxurious feel */
+    padding: 70px 40px;
     text-align: center;
-    border-radius: 15px; /* Rounded corners for a smoother look */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); /* More prominent shadow for depth */
-    color: #fff; /* White text for readability */
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    color: #fff;
 }
 
 .why-choose-us h2 {
-    font-size: 3rem; /* Larger font size for impactful heading */
-    color: #002855; /* Deep blue for strong contrast */
+    font-size: 3rem; /* Larger font size */
+    color: #002855; /* Deep blue for contrast */
     margin-bottom: 30px;
-    text-transform: uppercase; /* Elegant uppercase styling */
-    letter-spacing: 3px; /* Slightly more spaced letters */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for emphasis */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Slightly tighter spacing */
+    text-shadow: none; /* Remove shadow for sharpness */
+    -webkit-font-smoothing: antialiased; /* Smooth edges of text */
+    -moz-osx-font-smoothing: grayscale; /* Consistent rendering across platforms */
+    font-weight: 700; /* Bold font for sharper visibility */
 }
 
 .why-choose-us p {
-    font-size: 1.3rem; /* Readable paragraph text */
-    color: #f8f8f8; /* Soft white for a clean look */
+    font-size: 1.4rem;
+    color: #002855; /* Deep blue for readability */
     margin-bottom: 40px;
-    line-height: 1.9; /* Comfortable line spacing */
+    line-height: 1.8;
+    text-shadow: none; /* No shadow for clarity */
+    font-weight: 400; /* Regular weight for smooth paragraphs */
 }
 
 .why-choose-us ul {
-    list-style: none; /* No default bullet points */
+    list-style: none;
     padding: 0;
     margin: 0 auto;
-    max-width: 800px; /* Center-align and control width */
+    max-width: 800px;
 }
 
 .why-choose-us ul li {
-    font-size: 1.2rem; /* Slightly larger text for emphasis */
-    color: #fdfdfd; /* White text for contrast */
+    font-size: 1.3rem;
+    color: #002855; /* Deep blue for clarity */
     margin-bottom: 25px;
-    text-align: left; /* Align text for a cleaner list appearance */
-    padding-left: 35px; /* Create space for icon */
-    position: relative; /* Enable absolute positioning for icons */
-    line-height: 1.8; /* Space out list items for readability */
+    text-align: left;
+    padding-left: 35px;
+    position: relative;
+    line-height: 1.8;
+    font-weight: 500; /* Medium font weight for crisp text */
 }
 
 .why-choose-us ul li::before {
-    content: "✔"; /* Stylish checkmark */
-    font-size: 1.7rem; /* Larger checkmark */
-    color: #002855; /* Deep blue for strong contrast */
+    content: "✔";
+    font-size: 1.7rem;
+    color: #FFD700; /* Gold checkmark for emphasis */
     position: absolute;
-    left: 0; /* Align checkmark to the left */
+    left: 0;
     top: 0;
-    transform: translateY(5px); /* Slight vertical adjustment */
+    transform: translateY(5px);
 }
 
 .why-choose-us button {
     display: inline-block;
     margin-top: 30px;
-    padding: 18px 30px; /* Larger button for prominence */
-    background-color: #002855; /* Deep blue for contrast */
-    color: #FFD700; /* Gold text for a striking look */
+    padding: 18px 30px;
+    background-color: #002855;
+    color: #FFD700;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 700; /* Bold font for the button */
     border: none;
-    border-radius: 50px; /* Fully rounded button */
+    border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease; /* Smooth hover effects */
+    transition: all 0.3s ease;
 }
 
 .why-choose-us button:hover {
-    background-color: #fff; /* Bright hover background */
-    color: #002855; /* Deep blue text */
-    transform: translateY(-6px) scale(1.1); /* Slight hover lift and zoom */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Stronger hover shadow */
+    background-color: #FFD700;
+    color: #002855;
+    transform: translateY(-6px) scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Mobile View Styling (max-width: 767px) */
