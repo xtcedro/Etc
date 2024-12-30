@@ -1,25 +1,9 @@
 <?php
-session_start();
 header('Content-Type: image/png');
+require_once __DIR__ . '/captcha_generator.php';
 
-$captcha_text = substr(str_shuffle("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"), 0, 6);
-$_SESSION['captcha_text'] = $captcha_text;
-
-$image = imagecreatetruecolor(150, 50);
-$background_color = imagecolorallocate($image, 240, 240, 240);
-$text_color = imagecolorallocate($image, 50, 50, 50);
-$line_color = imagecolorallocate($image, 200, 200, 200);
-
-imagefilledrectangle($image, 0, 0, 150, 50, $background_color);
-
-// Add random lines
-for ($i = 0; $i < 5; $i++) {
-    imageline($image, rand(0, 150), rand(0, 50), rand(0, 150), rand(0, 50), $line_color);
-}
-
-// Add the text
-$font = __DIR__ . '/arial.ttf'; // Ensure you have an Arial font file in the same directory
-imagettftext($image, 20, rand(-10, 10), rand(10, 60), rand(30, 40), $text_color, $font, $captcha_text);
+// Generate the CAPTCHA image
+$image = generateCaptcha();
 
 // Output the image
 imagepng($image);
