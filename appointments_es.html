@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Reserve una cita con Dominguez Tech Solutions para servicios técnicos confiables y asequibles en el área metropolitana de Oklahoma City.">
+    <meta name="description" content="Reserva una cita con Dominguez Tech Solutions para servicios tecnológicos confiables y asequibles en el área metropolitana de Oklahoma City.">
     <title>Citas - Dominguez Tech Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- Header Section -->
+    <!-- Sección de Encabezado -->
     <header>
         <h1 class="header-title">Dominguez Tech Solutions</h1>
         <div class="title-banner">
@@ -17,57 +17,86 @@
         </div>
     </header>
 
+    <!-- Navegación en Escritorio -->
     <div class="desktop-nav">
         <a href="index_es.html">Inicio</a>
         <a href="about_es.html">Sobre Nosotros</a>
-        <a href="about2_es.html">Sobre Pedro Dominguez</a>
+        <a href="about2_es.html">Acerca de Pedro Dominguez</a>
         <a href="services_es.html">Servicios</a>
         <a href="appointments_es.html" class="active">Citas</a>
         <a href="offers_es.html">Ofertas Especiales</a>
         <a href="contact_es.html">Contáctenos</a>
     </div>
 
-    <!-- Hero Section -->
+    <!-- Sección Hero -->
     <section class="hero-section">
         <h1 class="hero-title">Reserva una Cita</h1>
-        <p class="hero-subtitle">Servicios técnicos confiables y asequibles adaptados a sus necesidades.</p>
+        <p class="hero-subtitle">Obtén servicios tecnológicos rápidos, confiables y asequibles adaptados a tu horario.</p>
+        <blockquote class="hero-quote">
+            <em>"Déjanos manejar tus problemas tecnológicos mientras tú te enfocas en lo que más importa."</em>
+        </blockquote>
     </section>
 
-    <!-- Appointments Form -->
+    <!-- Sección de Citas -->
     <section class="form-container">
-        <h2>Reservar su Cita</h2>
+        <h2>Reserva Tu Cita</h2>
+        <p class="form-description">
+            Hacemos que programar tus necesidades de servicio tecnológico sea fácil. Completa el formulario a continuación y dinos tu fecha y hora preferidas. 
+            Un miembro de nuestro equipo confirmará tu cita en breve. ¿Necesitas ayuda de inmediato? Llámanos al <a href="tel:+15399015819">+1 (539) 901-5819</a>.
+        </p>
         <form action="/submit_appointment" method="post">
-            <label for="name">Nombre Completo:</label>
-            <input type="text" id="name" name="name" required>
+            <div class="floating-label">
+                <input type="text" id="name" name="name" required placeholder=" ">
+                <label for="name">Nombre Completo</label>
+            </div>
 
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
+            <div class="floating-label">
+                <input type="email" id="email" name="email" required placeholder=" ">
+                <label for="email">Correo Electrónico</label>
+            </div>
 
-            <label for="date">Fecha Preferida:</label>
-            <input type="date" id="date" name="date" required>
+            <div class="floating-label">
+                <input type="date" id="date" name="date" required placeholder=" ">
+                <label for="date">Fecha Preferida</label>
+            </div>
 
-            <label for="time">Hora Preferida:</label>
-            <input type="time" id="time" name="time" required>
+            <div class="floating-label">
+                <input type="time" id="time" name="time" required placeholder=" ">
+                <label for="time">Hora Preferida</label>
+            </div>
 
-            <label for="message">Notas Adicionales:</label>
-            <textarea id="message" name="message" rows="5"></textarea>
+            <div class="floating-label">
+                <textarea id="message" name="message" rows="5" placeholder=" "></textarea>
+                <label for="message">Notas Adicionales</label>
+            </div>
 
-            <button type="submit">Reservar Cita</button>
+            <button type="submit">Confirmar Cita</button>
         </form>
     </section>
 
-    <!-- Footer -->
+    <!-- Sección Por Qué Elegirnos -->
+    <section class="why-choose-us">
+        <h2>¿Por Qué Elegir Dominguez Tech Solutions?</h2>
+        <ul>
+            <li><strong>Velocidad:</strong> La mayoría de las citas se completan en un plazo de 24 horas.</li>
+            <li><strong>Transparencia:</strong> Sin tarifas ocultas, solo un servicio honesto y confiable.</li>
+            <li><strong>Experiencia:</strong> Décadas de experiencia resolviendo desafíos tecnológicos complejos.</li>
+            <li><strong>Enfoque Local:</strong> Sirviendo con orgullo al área metropolitana de Oklahoma City.</li>
+        </ul>
+    </section>
+
+    <!-- Pie de Página -->
     <footer>
-    <p>&copy; 2024 Dominguez Tech Solutions. Todos los derechos reservados.</p>
-    <ul class="legal-links">
-        <li><a href="terms_es.html">Términos y Condiciones</a></li>
-        <li><a href="privacy_es.html">Política de Privacidad</a></li>
-        <li><a href="disclaimer_es.html">Aviso Legal</a></li>
-        <li><a href="warranty_es.html">Política de Garantía</a></li>
-        <li><a href="refund_es.html">Política de Reembolsos</a></li>
-        <li><a href="accessibility_es.html">Declaración de Accesibilidad</a></li>
-        <li><a href="cookies_es.html">Política de Cookies</a></li>
-    </ul>
+        <p>&copy; 2024 Dominguez Tech Solutions. Todos los derechos reservados.</p>
+        <ul class="legal-links">
+            <li><a href="terms_es.html">Términos y Condiciones</a></li>
+            <li><a href="privacy_es.html">Política de Privacidad</a></li>
+            <li><a href="disclaimer_es.html">Aviso Legal</a></li>
+            <li><a href="warranty_es.html">Política de Garantía</a></li>
+            <li><a href="refund_es.html">Política de Reembolso</a></li>
+            <li><a href="accessibility_es.html">Declaración de Accesibilidad</a></li>
+            <li><a href="cookies_es.html">Política de Cookies</a></li>
+        </ul>
     </footer>
 </body>
 </html>
