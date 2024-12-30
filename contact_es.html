@@ -3,37 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contacta a Dominguez Tech Solutions para consultas o soporte.">
-    <title>Contáctanos - Dominguez Tech Solutions</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <meta name="description" content="Contacta a Dominguez Tech Solutions para servicios tecnológicos confiables y asequibles en el área metropolitana de Oklahoma City.">
+    <title>Contáctenos - Dominguez Tech Solutions</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+    <!-- Sección de Encabezado -->
     <header>
         <h1 class="header-title">Dominguez Tech Solutions</h1>
         <div class="title-banner">
-            <img src="/assets/images/banner1.png" alt="Dominguez Tech Solutions">
+            <img src="assets/images/banner1.png" alt="Dominguez Tech Solutions">
         </div>
     </header>
 
+    <!-- Navegación en Escritorio -->
     <div class="desktop-nav">
         <a href="index_es.html">Inicio</a>
         <a href="about_es.html">Sobre Nosotros</a>
-        <a href="about2_es.html">Sobre Pedro Dominguez</a>
+        <a href="about2_es.html">Acerca de Pedro Dominguez</a>
         <a href="services_es.html">Servicios</a>
         <a href="appointments_es.html">Citas</a>
         <a href="offers_es.html">Ofertas Especiales</a>
-        <a href="contact_es.html" class="active">Contáctanos</a>
+        <a href="contact_es.html" class="active">Contáctenos</a>
     </div>
 
-    <!-- Hero Section -->
+    <!-- Sección Hero -->
     <section class="hero-section">
-        <h1 class="hero-title">Contáctanos</h1>
-        <p class="hero-subtitle">Ponte en contacto con Dominguez Tech Solutions para todas tus necesidades tecnológicas.</p>
+        <h1 class="hero-title">Contáctenos</h1>
+        <p class="hero-subtitle">Estamos aquí para ayudarte con todas tus necesidades tecnológicas. ¡Contáctanos hoy!</p>
+        <blockquote class="hero-quote">
+            <em>"Tu socio tecnológico para soluciones confiables y asequibles."</em>
+        </blockquote>
     </section>
 
-    <!-- Contact Form --->
+    <!-- Sección de Formulario de Contacto -->
     <section class="form-container">
-        <h2>Envíanós un Mensaje</h2>
+        <h2>Envíanos un Mensaje</h2>
+        <p class="form-description">
+            ¿Tienes preguntas o necesitas ayuda? Completa el formulario a continuación y te responderemos en un plazo de 24 horas. 
+            Para consultas urgentes, llámanos al <a href="tel:+15399015819">+1 (539) 901-5819</a>.
+        </p>
         <form action="/assets/php/contact_form_handler.php" method="POST">
             <div class="floating-label">
                 <input type="text" id="name" name="name" placeholder=" " required>
@@ -46,32 +56,45 @@
             <div class="floating-label">
                 <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
                 <label for="message">Mensaje</label>
-			</div>
+            </div>
 
-			<!-- CAPTCHA Image --->
+            <!-- Imagen CAPTCHA -->
             <img src="/assets/php/captcha.php" alt="CAPTCHA">
-            <label for="captcha">Ingresa el CAPTCHA:</label>
-			<input type="text" id="captcha" name="captcha" required>
+            <div class="floating-label">
+                <input type="text" id="captcha" name="captcha" placeholder=" " required>
+                <label for="captcha">Ingrese el CAPTCHA</label>
+            </div>
 
-
-            <!-- Honeypot Field (Hidden) --->
+            <!-- Campo Honeypot (Oculto) -->
             <input type="text" name="honeypot" style="display: none;">
 
             <button type="submit">Enviar</button>
         </form>
-	</section>
-
-    <!-- Contact Information Section -->
-    <section class="about-section">
-        <h2>Información de Contacto</h2>
-        <p>Si prefieres, puedes contactarnos directamente por correo electrónico o teléfono:</p>
-        <p><strong>Correo Electrónico:</strong> <a href="mailto:domingueztechsolutions@gmail.com">domingueztechsolutions@gmail.com</a></p>
-        <p><strong>Teléfono:</strong> <a href="tel:+15399015819">+1 (539) 901-5819</a></p>
     </section>
 
-    <!-- Footer -->
+    <!-- Sección de Información de Contacto -->
+    <section class="contact-info">
+        <h2>Información de Contacto</h2>
+        <p>
+            Contáctanos directamente por correo electrónico o teléfono. Estamos comprometidos a brindar asistencia rápida y efectiva.
+        </p>
+        <p><strong>Correo Electrónico:</strong> <a href="mailto:domingueztechsolutions@gmail.com">domingueztechsolutions@gmail.com</a></p>
+        <p><strong>Teléfono:</strong> <a href="tel:+15399015819">+1 (539) 901-5819</a></p>
+        <p><strong>Dirección:</strong> 1611 Northwest 30th Street, Oklahoma City, Oklahoma 73118</p>
+    </section>
+
+    <!-- Pie de Página -->
     <footer>
         <p>&copy; 2024 Dominguez Tech Solutions. Todos los derechos reservados.</p>
+        <ul class="legal-links">
+            <li><a href="terms_es.html">Términos y Condiciones</a></li>
+            <li><a href="privacy_es.html">Política de Privacidad</a></li>
+            <li><a href="disclaimer_es.html">Aviso Legal</a></li>
+            <li><a href="warranty_es.html">Política de Garantía</a></li>
+            <li><a href="refund_es.html">Política de Reembolso</a></li>
+            <li><a href="accessibility_es.html">Declaración de Accesibilidad</a></li>
+            <li><a href="cookies_es.html">Política de Cookies</a></li>
+        </ul>
     </footer>
 </body>
 </html>
