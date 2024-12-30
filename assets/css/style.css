@@ -780,3 +780,69 @@ html {
     background-color: #D35400; /* Darker orange on hover */
     transform: scale(1.05); /* Slight zoom effect */
 }
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 50px 20px; /* Spacing for section */
+    text-align: center;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+}
+
+.why-choose-us h2 {
+    font-size: 2rem; /* Larger font for heading */
+    color: #333; /* Darker color for readability */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Stylish uppercase headings */
+}
+
+.why-choose-us p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6; /* Improve readability */
+}
+
+.why-choose-us ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px; /* Center-align list within container */
+}
+
+.why-choose-us ul li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: left; /* Align text to left */
+    padding-left: 20px; /* Add padding for icon spacing */
+    position: relative; /* For icon placement */
+}
+
+.why-choose-us ul li::before {
+    content: "✓"; /* Add checkmark icon */
+    font-size: 1.2rem;
+    color: #007BFF; /* Blue color for icon */
+    position: absolute;
+    left: 0; /* Align icon to the left */
+    top: 0;
+}
+
+.why-choose-us button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #007BFF; /* Primary blue color */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.why-choose-us button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
