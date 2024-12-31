@@ -35,14 +35,6 @@ function generateCaptcha() {
 
     imagettftext($image, 20, rand(-10, 10), rand(10, 60), rand(30, 40), $text_color, $font, $captcha_text);
 
-    // Output the image to the browser
-    header('Content-Type: image/png');
-    imagepng($image);
-
-    // Clean up the image resource
-    imagedestroy($image);
+    // Return the image resource
+    return $image;
 }
-
-// Call the function to display the CAPTCHA
-generateCaptcha();
-?>
