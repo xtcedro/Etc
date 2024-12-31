@@ -1,4 +1,5 @@
 <?php
+session_start();
 header('Content-Type: image/png');
 require_once __DIR__ . '/captcha_generator.php';
 
