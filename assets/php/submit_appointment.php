@@ -1,40 +1,54 @@
 <?php
 // File: /assets/php/submit_appointment.php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Honeypot field to prevent bots
-    if (!empty($_POST['honeypot'])) {
+    if (!empty($_POST['appointment_check'])) {
         exit("Invalid submission detected.");
     }
 
-    // Sanitize input data
-    $name = htmlspecialchars(trim($_POST['name']));
-    $email = filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL);
-    $date = htmlspecialchars(trim($_POST['date']));
-    $time = htmlspecialchars(trim($_POST['time']));
+    // Sanitize and validate input data
+    $name = strip_tags(trim($_POST['name']));
+    $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
+    $email = filter_var($email, FILTER_VALIDATE_EMAIL);
+    $date = trim($_POST['date']);
+    $time = trim($_POST['time']);
     $message = htmlspecialchars(trim($_POST['message']));
 
     // Validate required fields
     if (empty($name) || !$email || empty($date) || empty($time)) {
-        echo "Error: All required fields must be filled out correctly.";
+        echo "Error: Please fill in all required fields correctly.";
+        exit;
+    }
+
+    // Validate date and time format (YYYY-MM-DD and HH:MM)
+    if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $date)) {
+        echo "Error: Invalid date format. Please use YYYY-MM-DD.";
+        exit;
+    }
+
+    if (!preg_match('/^\d{2}:\d{2}$/', $time)) {
+        echo "Error: Invalid time format. Please use HH:MM.";
         exit;
     }
 
     // Email setup
-    $to = "no-reply@domingueztechsolutions.com"; // Your no-reply email address
+    $to = "contact@domingueztechsolutions.com"; // Your domain email
     $subject = "New Appointment Request from $name";
     $body = "
-        You have received a new appointment request:\n
-        Name: $name\n
-        Email: $email\n
-        Preferred Date: $date\n
-        Preferred Time: $time\n
-        Additional Notes:\n$message\n
+        You have received a new appointment request:
+
+        Name: $name
+        Email: $email
+        Preferred Date: $date
+        Preferred Time: $time
+        Additional Notes:
+        $message
     ";
 
     // Email headers
-    $headers = "From: no-reply@domingueztechsolutions.com\r\n";
-    $headers .= "Reply-To: $email\r\n";
+    $headers = "From: $email\r\n"; // Use the user's email as the sender
+    $headers .= "Reply-To: $email\r\n"; // Allow replying to the user's email
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
     // Send email
