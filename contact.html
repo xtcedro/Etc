@@ -45,7 +45,7 @@
             Have questions or need assistance? Fill out the form below and we’ll get back to you within 24 hours. 
             For urgent inquiries, please call us at <a href="tel:+15399015819">+1 (539) 901-5819</a>.
         </p>
-        <form action="/assets/php/contact_form_handler.php" method="POST">
+        <form action="/assets/php/contact_form_handler.php" method="POST" id="contact-form">
             <div class="floating-label">
                 <input type="text" id="name" name="name" placeholder=" " required>
                 <label for="name">Full Name</label>
@@ -60,7 +60,10 @@
             </div>
 
             <!-- CAPTCHA Image -->
-            <img src="/assets/php/captcha.php" alt="CAPTCHA">
+            <div class="captcha-container">
+                <img src="/assets/php/captcha.php" alt="CAPTCHA" id="captcha-image">
+                <button type="button" id="refresh-captcha">Reload CAPTCHA</button>
+            </div>
             <div class="floating-label">
                 <input type="text" id="captcha" name="captcha" placeholder=" " required>
                 <label for="captcha">Enter CAPTCHA</label>
@@ -71,6 +74,7 @@
 
             <button type="submit">Submit</button>
         </form>
+        <p id="form-status"></p>
     </section>
 
     <!-- Contact Information Section -->
@@ -81,7 +85,6 @@
         </p>
         <p><strong>Email:</strong> <a href="mailto:domingueztechsolutions@gmail.com">domingueztechsolutions@gmail.com</a></p>
         <p><strong>Phone:</strong> <a href="tel:+15399015819">+1 (539) 901-5819</a></p>
-        <p><strong>Address:</strong> 1611 Northwest 30th Street, Oklahoma City, Oklahoma 73118</p>
     </section>
 
     <!-- Footer -->
@@ -97,5 +100,34 @@
             <li><a href="cookies.html">Cookie Policy</a></li>
         </ul>
     </footer>
+
+    <script>
+        // Refresh CAPTCHA
+        document.getElementById('refresh-captcha').addEventListener('click', function () {
+            const captchaImage = document.getElementById('captcha-image');
+            captchaImage.src = '/assets/php/captcha.php?rand=' + Math.random();
+        });
+
+        // Form submission handling
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', async function (event) {
+            event.preventDefault();
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+            });
+            const result = await response.json();
+            const status = document.getElementById('form-status');
+            if (result.status === 'success') {
+                status.textContent = 'Message sent successfully!';
+                status.style.color = 'green';
+                form.reset();
+            } else {
+                status.textContent = result.message;
+                status.style.color = 'red';
+            }
+        });
+    </script>
 </body>
 </html>
