@@ -588,7 +588,7 @@ form .success-message {
 
 .title-banner img {
   display: block;
-  max-width: 100%; /* Slightly reduce size */
+  width: 100%; /* Slightly reduce size */
   height: auto;
   margin: 0 auto;
 }
@@ -648,85 +648,6 @@ html {
     transform: scale(1.05); /* Slight zoom effect */
 }
 
-/* Why Choose Us Section */
-.why-choose-us {
-    background: linear-gradient(135deg, #FFD700, #FFC107); /* Gradient gold background */
-    padding: 70px 40px;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-    color: #fff;
-}
-
-.why-choose-us h2 {
-    font-size: 3rem; /* Larger font size */
-    color: #002855; /* Deep blue for contrast */
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px; /* Slightly tighter spacing */
-    text-shadow: none; /* Remove shadow for sharpness */
-    -webkit-font-smoothing: antialiased; /* Smooth edges of text */
-    -moz-osx-font-smoothing: grayscale; /* Consistent rendering across platforms */
-    font-weight: 700; /* Bold font for sharper visibility */
-}
-
-.why-choose-us p {
-    font-size: 1.4rem;
-    color: #002855; /* Deep blue for readability */
-    margin-bottom: 40px;
-    line-height: 1.8;
-    text-shadow: none; /* No shadow for clarity */
-    font-weight: 400; /* Regular weight for smooth paragraphs */
-}
-
-.why-choose-us ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.why-choose-us ul li {
-    font-size: 1.3rem;
-    color: #002855; /* Deep blue for clarity */
-    margin-bottom: 25px;
-    text-align: left;
-    padding-left: 35px;
-    position: relative;
-    line-height: 1.8;
-    font-weight: 500; /* Medium font weight for crisp text */
-}
-
-.why-choose-us ul li::before {
-    content: "✔";
-    font-size: 1.7rem;
-    color: #FFD700; /* Gold checkmark for emphasis */
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translateY(5px);
-}
-
-.why-choose-us button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 18px 30px;
-    background-color: #002855;
-    color: #FFD700;
-    font-size: 1.2rem;
-    font-weight: 700; /* Bold font for the button */
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.why-choose-us button:hover {
-    background-color: #FFD700;
-    color: #002855;
-    transform: translateY(-6px) scale(1.1);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-}
 
 /* Mobile View Styling (max-width: 767px) */
 @media (max-width: 767px) {
