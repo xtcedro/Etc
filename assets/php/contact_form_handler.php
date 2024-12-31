@@ -1,15 +1,16 @@
 <?php
 // Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Honeypot validation (spam protection)
+    session_start();
+
+    // Honeypot validation
     if (!empty($_POST['honeypot'])) {
-        die("Bot detected. Submission rejected.");
+        die(json_encode(['status' => 'error', 'message' => 'Bot detected.']));
     }
 
     // CAPTCHA validation
-    session_start();
     if (empty($_POST['captcha']) || $_POST['captcha'] !== $_SESSION['captcha_text']) {
-        die("Invalid CAPTCHA. Please go back and try again.");
+        die(json_encode(['status' => 'error', 'message' => 'Invalid CAPTCHA.']));
     }
 
     // Sanitize and validate inputs
@@ -17,30 +18,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL);
     $message = filter_var(trim($_POST['message']), FILTER_SANITIZE_STRING);
 
-    if (!$name || !$email || !$message) {
-        die("Invalid input. Please check your entries and try again.");
+    if (!$name || !$email || !$message || strlen($name) > 100 || strlen($message) > 1000) {
+        die(json_encode(['status' => 'error', 'message' => 'Invalid input.']));
     }
 
     // Email setup
-    $to = "no-reply@domingueztechsolutions.com";
+    $to = "contact@domingueztechsolutions.com";
     $subject = "New Contact Form Submission";
-    $headers = "From: $name <$email>\r\n";
+    $headers = "From: no-reply@domingueztechsolutions.com\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8";
 
-    // Email content
-    $body = "You have received a new message from your contact form:\n\n";
+    $body = "You have received a new message:\n\n";
     $body .= "Name: $name\n";
     $body .= "Email: $email\n";
     $body .= "Message:\n$message\n";
 
     // Send the email
     if (mail($to, $subject, $body, $headers)) {
-        header("Location: /contact.html?success=1");
-        exit;
+        echo json_encode(['status' => 'success', 'message' => 'Message sent successfully.']);
     } else {
-        die("Failed to send email. Please try again later.");
+        error_log("Email failed to send: " . print_r(error_get_last(), true), 3, '/path/to/error.log');
+        echo json_encode(['status' => 'error', 'message' => 'Failed to send email.']);
     }
 } else {
-    die("Invalid request.");
+    die(json_encode(['status' => 'error', 'message' => 'Invalid request method.']));
 }
