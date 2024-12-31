@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contacta a Dominguez Tech Solutions para servicios tecnológicos confiables y asequibles en el área metropolitana de Oklahoma City.">
-    <title>Contáctenos - Dominguez Tech Solutions</title>
+    <meta name="description" content="Contacta con Dominguez Tech Solutions para servicios tecnológicos fiables y asequibles en el área metropolitana de Oklahoma City.">
+    <title>Contáctanos - Dominguez Tech Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/formSuccess_es.js" defer></script>
+    <script src="assets/js/formSuccess.js" defer></script>
 </head>
 
 <body>
-    <!-- Sección de Encabezado -->
+    <!-- Header Section -->
     <header>
         <h1 class="header-title">Dominguez Tech Solutions</h1>
         <div class="title-banner">
@@ -18,34 +18,34 @@
         </div>
     </header>
 
-    <!-- Navegación en Escritorio -->
+    <!-- Desktop Navigation -->
     <div class="desktop-nav">
         <a href="index_es.html">Inicio</a>
-        <a href="about_es.html">Sobre Nosotros</a>
-        <a href="about2_es.html">Acerca de Pedro Dominguez</a>
+        <a href="about_es.html">Acerca de</a>
+        <a href="about2_es.html">Sobre Pedro Dominguez</a>
         <a href="services_es.html">Servicios</a>
         <a href="appointments_es.html">Citas</a>
         <a href="offers_es.html">Ofertas Especiales</a>
-        <a href="contact_es.html" class="active">Contáctenos</a>
+        <a href="contact_es.html" class="active">Contáctanos</a>
     </div>
 
-    <!-- Sección Hero -->
+    <!-- Hero Section -->
     <section class="hero-section">
-        <h1 class="hero-title">Contáctenos</h1>
-        <p class="hero-subtitle">Estamos aquí para ayudarte con todas tus necesidades tecnológicas. ¡Contáctanos hoy!</p>
+        <h1 class="hero-title">Contáctanos</h1>
+        <p class="hero-subtitle">Estamos aquí para ayudarte con todas tus necesidades tecnológicas. ¡Contáctanos hoy mismo!</p>
         <blockquote class="hero-quote">
             <em>"Tu socio tecnológico para soluciones confiables y asequibles."</em>
         </blockquote>
     </section>
 
-    <!-- Sección de Formulario de Contacto -->
-    <section class="form-container">
+    <!-- Contact Form Section -->
+    <section class="contact-info">
         <h2>Envíanos un Mensaje</h2>
-        <p class="form-description">
-            ¿Tienes preguntas o necesitas ayuda? Completa el formulario a continuación y te responderemos en un plazo de 24 horas. 
-            Para consultas urgentes, llámanos al <a href="tel:+15399015819">+1 (539) 901-5819</a>.
+        <p>
+            ¿Tienes preguntas o necesitas ayuda? Llena el formulario a continuación y te responderemos dentro de 24 horas. 
+            Para consultas urgentes, por favor llámanos al <a href="tel:+15399015819">+1 (539) 901-5819</a>.
         </p>
-        <form action="/assets/php/contact_form_handler.php" method="POST">
+        <form action="/assets/php/contact_form_handler.php" method="POST" id="contact-form">
             <div class="floating-label">
                 <input type="text" id="name" name="name" placeholder=" " required>
                 <label for="name">Nombre Completo</label>
@@ -59,32 +59,35 @@
                 <label for="message">Mensaje</label>
             </div>
 
-            <!-- Imagen CAPTCHA -->
-            <img src="/assets/php/captcha.php" alt="CAPTCHA">
+            <!-- CAPTCHA Image -->
+            <div class="captcha-container">
+                <img src="/assets/php/captcha.php" alt="CAPTCHA" id="captcha-image">
+                <button type="button" id="refresh-captcha">Recargar CAPTCHA</button>
+            </div>
             <div class="floating-label">
                 <input type="text" id="captcha" name="captcha" placeholder=" " required>
-                <label for="captcha">Ingrese el CAPTCHA</label>
+                <label for="captcha">Ingresa el CAPTCHA</label>
             </div>
 
-            <!-- Campo Honeypot (Oculto) -->
+            <!-- Honeypot Field (Hidden) -->
             <input type="text" name="honeypot" style="display: none;">
 
             <button type="submit">Enviar</button>
         </form>
+        <p id="form-status"></p>
     </section>
 
-    <!-- Sección de Información de Contacto -->
+    <!-- Contact Information Section -->
     <section class="contact-info">
         <h2>Información de Contacto</h2>
         <p>
-            Contáctanos directamente por correo electrónico o teléfono. Estamos comprometidos a brindar asistencia rápida y efectiva.
+            Contáctanos directamente por correo electrónico o teléfono. Estamos comprometidos a brindar asistencia rápida y eficaz.
         </p>
         <p><strong>Correo Electrónico:</strong> <a href="mailto:domingueztechsolutions@gmail.com">domingueztechsolutions@gmail.com</a></p>
         <p><strong>Teléfono:</strong> <a href="tel:+15399015819">+1 (539) 901-5819</a></p>
-        <p><strong>Dirección:</strong> 1611 Northwest 30th Street, Oklahoma City, Oklahoma 73118</p>
     </section>
 
-    <!-- Pie de Página -->
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Dominguez Tech Solutions. Todos los derechos reservados.</p>
         <ul class="legal-links">
@@ -92,10 +95,39 @@
             <li><a href="privacy_es.html">Política de Privacidad</a></li>
             <li><a href="disclaimer_es.html">Aviso Legal</a></li>
             <li><a href="warranty_es.html">Política de Garantía</a></li>
-            <li><a href="refund_es.html">Política de Reembolso</a></li>
+            <li><a href="refund_es.html">Política de Reembolsos</a></li>
             <li><a href="accessibility_es.html">Declaración de Accesibilidad</a></li>
             <li><a href="cookies_es.html">Política de Cookies</a></li>
         </ul>
     </footer>
+
+    <script>
+        // Refresh CAPTCHA
+        document.getElementById('refresh-captcha').addEventListener('click', function () {
+            const captchaImage = document.getElementById('captcha-image');
+            captchaImage.src = '/assets/php/captcha.php?rand=' + Math.random();
+        });
+
+        // Form submission handling
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', async function (event) {
+            event.preventDefault();
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+            });
+            const result = await response.json();
+            const status = document.getElementById('form-status');
+            if (result.status === 'success') {
+                status.textContent = '¡Mensaje enviado con éxito!';
+                status.style.color = 'green';
+                form.reset();
+            } else {
+                status.textContent = result.message;
+                status.style.color = 'red';
+            }
+        });
+    </script>
 </body>
 </html>
