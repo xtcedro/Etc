@@ -3,6 +3,11 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     session_start();
 
+    // Debugging: Check if session is set
+    if (!isset($_SESSION['captcha_text'])) {
+        die(json_encode(['status' => 'error', 'message' => 'CAPTCHA session not set.']));
+    }
+
     // Honeypot validation
     if (!empty($_POST['honeypot'])) {
         die(json_encode(['status' => 'error', 'message' => 'Bot detected.']));
@@ -10,7 +15,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // CAPTCHA validation
     if (empty($_POST['captcha']) || $_POST['captcha'] !== $_SESSION['captcha_text']) {
-        die(json_encode(['status' => 'error', 'message' => 'Invalid CAPTCHA.']));
+        die(json_encode([
+            'status' => 'error',
+            'message' => 'Invalid CAPTCHA.',
+            'debug' => [
+                'session' => $_SESSION['captcha_text'] ?? 'not set',
+                'input' => $_POST['captcha'] ?? 'not provided'
+            ]
+        ]));
     }
 
     // Sanitize and validate inputs
