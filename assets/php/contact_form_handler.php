@@ -1,5 +1,4 @@
 <?php
-// Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     session_start();
 
@@ -24,6 +23,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ]
         ]));
     }
+
+    // Unset the CAPTCHA after validation to prevent reuse
+    unset($_SESSION['captcha_text']);
 
     // Sanitize and validate inputs
     $name = filter_var(trim($_POST['name']), FILTER_SANITIZE_STRING);
@@ -50,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (mail($to, $subject, $body, $headers)) {
         echo json_encode(['status' => 'success', 'message' => 'Message sent successfully.']);
     } else {
-        error_log("Email failed to send: " . print_r(error_get_last(), true), 3, '/path/to/error.log');
+        error_log("Email failed to send: " . print_r(error_get_last(), true), 3, '/var/log/php_errors.log');
         echo json_encode(['status' => 'error', 'message' => 'Failed to send email.']);
     }
 } else {
