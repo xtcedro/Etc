@@ -648,7 +648,7 @@ html {
 
 
 /* Mobile View Styling (max-width: 767px) */
-@media (max-width: 767px) {
+@media (max-width: 480px) {
     body {
         font-size: 14px;
         margin: 0;
@@ -693,6 +693,27 @@ html {
         padding: 0.8rem 1rem; /* Adjust button size for readability */
     }
 
+
+	.signup-section {
+		padding: 10px;
+		max-width: 90%;
+	}
+
+	.signup-section h2 {
+		font-size: 20px;
+	}
+
+
+	.signup-form input[type"tel"],
+	.signup-form input[type"text"],
+	.signup-form input[type"passwords"], {
+		font-size: 12px;
+		padding: 6px;
+	}
+
+	.signup-section p {
+		font-size: 12px;
+	}
     .title-banner {
         padding: 1rem 0; /* Add spacing for mobile */
         background-color: #f8f8f8; /* Optional: light background for contrast */
@@ -871,6 +892,28 @@ html {
         font-size: 2.5rem; /* Adjust size for tablets */
         margin-bottom: 1.2rem;
     }
+
+
+	.signup-section {
+		padding: 15px;
+		max-width: 500px;
+	}
+
+	.signup-section h2 {
+		font-size: 22px;
+	}
+
+
+	.signup-form input[type"tel"],
+	.signup-form input[type"text"],
+	.signup-form input[type"passwords"], {
+		font-size: 13px;
+		padding: 8px;
+	}
+
+	.signup-section p {
+		font-size: 13px;
+	}
 
     .offers-description {
         font-size: 1.3rem; /* Moderate font size */
