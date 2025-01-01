@@ -42,7 +42,7 @@
     </header>
 
     <!-- Desktop Navigation -->
-    <div class="desktop-nav">
+    <nav class="desktop-nav">
         <a href="index.php" class="active">Home</a>
         <a href="about.html">About Us</a>
         <a href="about2.html">About Pedro Dominguez</a>
@@ -50,13 +50,11 @@
         <a href="appointments.html">Appointments</a>
         <a href="offers.html">Special Offers</a>
         <a href="contact.html">Contact Us</a>
-    </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <h1 class="hero-title">
-            Welcome to Dominguez Tech Solutions - Fast, Reliable, and Affordable Tech Services for Oklahoma City
-        </h1>
+        <h1 class="hero-title">Welcome to Dominguez Tech Solutions - Fast, Reliable, and Affordable Tech Services for Oklahoma City</h1>
         <p>
             Why settle for long wait times and expensive services? At <strong>Dominguez Tech Solutions</strong>, 
             we specialize in delivering <strong>24-hour iPhone, computer, and laptop repairs</strong>, 
