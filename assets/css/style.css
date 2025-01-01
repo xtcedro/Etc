@@ -914,3 +914,20 @@ html {
     width: 80%;
     font-size: 16px;
 }
+
+/* Style for all form inputs */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Placeholder text styling */
+.form-input::placeholder {
+    color: #888;
+    font-style: italic;
+}
