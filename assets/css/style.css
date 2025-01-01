@@ -9,17 +9,13 @@ body {
 	overflow-x: hidden;
 }
 
-/* Headings */
-h1, h2, h3 {
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
 /* Gold Gradient Titles */
-h1, h2 {
+h1, h2, h3 {
     background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /* Hero Section */
