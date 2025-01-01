@@ -72,13 +72,13 @@
         <h2>Create Your Account</h2>
         <form action="assets/php/signup.php" method="POST">
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]{10}">
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" class="form-input" required pattern="[0-9]{10}">
 
             <label for="pin">6-Digit PIN:</label>
-            <input type="text" id="pin" name="pin" placeholder="Enter a 6-digit PIN" required pattern="[0-9]{6}">
+            <input type="text" id="pin" name="pin" placeholder="Enter a 6-digit PIN" class="form-input" required pattern="[0-9]{6}">
 
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <input type="password" id="password" name="password" placeholder="Enter your password" class="form-input" required>
 
             <button type="submit" class="cta-button">Sign Up</button>
         </form>
