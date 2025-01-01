@@ -931,3 +931,50 @@ html {
     color: #888;
     font-style: italic;
 }
+
+/* Style for all form inputs */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Placeholder text styling */
+.form-input::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* General placeholder styling */
+input::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Password-specific placeholder styling */
+input[type="password"]::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Vendor-specific placeholder styling */
+input::-webkit-input-placeholder { /* For Chrome, Safari, and Edge */
+    color: #888;
+    font-style: italic;
+}
+input::-moz-placeholder { /* For Firefox 19+ */
+    color: #888;
+    font-style: italic;
+}
+input:-ms-input-placeholder { /* For IE 10+ */
+    color: #888;
+    font-style: italic;
+}
+input:-moz-placeholder { /* For Firefox 18- */
+    color: #888;
+    font-style: italic;
+}
