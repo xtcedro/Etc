@@ -584,13 +584,16 @@ form .success-message {
   top: 0;
   left: 0;
   z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no repeat;
 }
 
 .title-banner img {
   display: block;
   width: 100%; /* Slightly reduce size */
   height: auto;
-  margin: 0 auto;
+  margin: 0;
 }
 
 html {
