@@ -914,3 +914,67 @@ html {
     width: 80%;
     font-size: 16px;
 }
+
+/* General Styling for Signup Section */
+.signup-section {
+    background-color: #001f3f; /* Dark Navy Blue */
+    color: #ffffff; /* White */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.signup-section h2 {
+    text-align: center;
+    color: #ffd700; /* Gold */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.signup-form label {
+    font-size: 16px;
+    color: #ffffff; /* White */
+}
+
+.signup-form input[type="tel"],
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+    background-color: #ffffff; /* White */
+    color: #001f3f; /* Dark Navy Blue */
+    border: 2px solid #ffd700; /* Gold */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.signup-form input::placeholder {
+    color: #7f8c8d; /* Light Gray */
+}
+
+.signup-form input:focus {
+    border-color: #ffffff; /* White */
+    outline: none;
+}
+
+.signup-section p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-section a {
+    color: #ffd700; /* Gold */
+    text-decoration: none;
+}
+
+.signup-section a:hover {
+    text-decoration: underline;
+}
