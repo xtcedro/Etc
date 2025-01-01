@@ -3,13 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dominguez Tech Solutions ofrece reparaciones rápidas y asequibles de iPhone y computadoras, desarrollo de software personalizado y diseño web en Oklahoma City. Servicio de calidad con entrega en 24 horas.">
-    <title>Registrarse - Dominguez Tech Solutions</title>
+    <meta name="description" content="Dominguez Tech Solutions ofrece reparaciones rápidas y asequibles de iPhones y computadoras, desarrollo de software personalizado y diseño de sitios web en la ciudad de Oklahoma. Servicio de calidad con entrega en 24 horas.">
+    <title>Regístrate - Dominguez Tech Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        function setLanguage(lang) {
+            if (lang === 'en') {
+                window.location.href = 'index.html'; // Redirige a la versión en inglés
+            } else {
+                document.getElementById('language-modal').style.display = 'none';
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <!-- Encabezado -->
+    <!-- Modal de selección de idioma -->
+    <div id="language-modal" class="modal">
+        <div class="modal-content">
+            <h2>Idioma / Language</h2>
+            <div class="language-options">
+                <button onclick="setLanguage('en')">
+                    <img src="assets/images/us-flag.png" alt="English" class="flag-icon"> English
+                </button>
+                <button onclick="setLanguage('es')">
+                    <img src="assets/images/mx-flag.png" alt="Español" class="flag-icon"> Español
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de encabezado -->
     <header>
         <h1 class="header-title">Dominguez Tech Solutions</h1>
         <div class="title-banner">
@@ -17,51 +41,51 @@
         </div>
     </header>
 
-    <!-- Navegación -->
+    <!-- Navegación de escritorio -->
     <nav class="desktop-nav">
-        <a href="index.php" class="active">Inicio</a>
-        <a href="about.html">Sobre Nosotros</a>
-        <a href="about2.html">Sobre Pedro Dominguez</a>
-        <a href="services.html">Servicios</a>
-        <a href="appointments.html">Citas</a>
-        <a href="offers.html">Ofertas Especiales</a>
-        <a href="contact.html">Contáctanos</a>
+        <a href="index_es.html" class="active">Inicio</a>
+        <a href="about_es.html">Sobre Nosotros</a>
+        <a href="about2_es.html">Sobre Pedro Dominguez</a>
+        <a href="services_es.html">Servicios</a>
+        <a href="appointments_es.html">Citas</a>
+        <a href="offers_es.html">Ofertas Especiales</a>
+        <a href="contact_es.html">Contáctanos</a>
     </nav>
 
-    <!-- Sección Hero -->
+    <!-- Sección de héroe -->
     <section class="hero-section">
-        <h1 class="hero-title">Bienvenido a Dominguez Tech Solutions - Servicios Técnicos Rápidos, Fiables y Asequibles en Oklahoma City</h1>
+        <h1 class="hero-title">Bienvenido a Dominguez Tech Solutions - Servicios Tecnológicos Rápidos, Confiables y Asequibles para la Ciudad de Oklahoma</h1>
         <p>
             ¿Por qué conformarse con largos tiempos de espera y servicios costosos? En <strong>Dominguez Tech Solutions</strong>,
-            nos especializamos en ofrecer <strong>reparaciones de iPhone, computadoras y laptops en 24 horas</strong>,
-            además de <strong>desarrollo de software personalizado</strong> y <strong>diseño web</strong>.
+            nos especializamos en ofrecer <strong>reparaciones de iPhones, computadoras y laptops en 24 horas</strong>,
+            junto con <strong>desarrollo de software personalizado</strong> y <strong>diseño de sitios web</strong>.
             Nuestra misión es brindar un servicio excepcional adaptado a tus necesidades, a un precio que te encantará.
         </p>
         <p>
-            Experimenta la diferencia con soluciones tecnológicas personalizadas, transparentes y asequibles.
+            Experimenta la diferencia de soluciones tecnológicas personalizadas, transparentes y asequibles.
         </p>
-        <button class="cta-button" onclick="location.href='services.html'">Descubre Nuestros Servicios</button>
+        <button class="cta-button" onclick="location.href='services_es.html'">Descubre Nuestros Servicios</button>
     </section>
 
-    <!-- Sección de Registro -->
-    <section class="about-section">
+    <!-- Sección del formulario de registro -->
+    <section class="signup-section">
         <h2>Crea Tu Cuenta</h2>
-        <form action="assets/php/signup.php" method="POST">
+        <form action="assets/php/signup.php" method="POST" class="signup-form">
             <label for="phone">Número de Teléfono:</label>
-            <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono" class="form-input" required pattern="[0-9]{10}">
+            <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono" required pattern="[0-9]{10}">
 
             <label for="pin">PIN de 6 Dígitos:</label>
-            <input type="text" id="pin" name="pin" placeholder="Ingresa un PIN de 6 dígitos" class="form-input" required pattern="[0-9]{6}">
+            <input type="text" id="pin" name="pin" placeholder="Ingresa un PIN de 6 dígitos" required pattern="[0-9]{6}">
 
             <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" class="form-input" required>
+            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
 
-            <button type="submit" class="cta-button">Registrarse</button>
+            <button type="submit" class="cta-button">Regístrate</button>
         </form>
-        <p>¿Ya tienes una cuenta? <a href="login.php">Inicia sesión aquí</a>.</p>
+        <p>¿Ya tienes una cuenta? <a href="login_es.php">Inicia sesión aquí</a>.</p>
     </section>
 
-    <!-- Sección de Servicios -->
+    <!-- Sección de servicios -->
     <section id="services" class="services-section">
         <h2>Lo Que Ofrecemos</h2>
         <div class="services-container">
@@ -71,31 +95,31 @@
             </div>
             <div class="service-item">
                 <h3>💻 Reparaciones de Computadoras</h3>
-                <p>Desde la eliminación de virus hasta actualizaciones de hardware, aseguramos que tus dispositivos funcionen como nuevos. Compatible con todas las marcas y sistemas operativos.</p>
+                <p>Desde eliminación de virus hasta actualizaciones de hardware, aseguramos que tus dispositivos funcionen como nuevos. Se aceptan todas las marcas y sistemas operativos.</p>
             </div>
             <div class="service-item">
                 <h3>⚙️ Desarrollo de Software Personalizado</h3>
                 <p>Optimiza tus operaciones con soluciones de software adaptadas a tu negocio. Hagamos realidad tus ideas.</p>
             </div>
             <div class="service-item">
-                <h3>🌐 Desarrollo Web</h3>
-                <p>Obtén un sitio web profesional y totalmente optimizado en solo 24 horas. Perfecto para negocios listos para impactar en línea.</p>
+                <h3>🌐 Desarrollo de Sitios Web</h3>
+                <p>Obtén un sitio web profesional y completamente optimizado en solo 24 horas. Perfecto para empresas listas para impactar en línea.</p>
             </div>
         </div>
-        <button class="cta-button" onclick="location.href='services.html'">Ver Todos Los Servicios</button>
+        <button class="cta-button" onclick="location.href='services_es.html'">Ver Todos los Servicios</button>
     </section>
 
-    <!-- Pie de Página -->
+    <!-- Pie de página -->
     <footer>
         <p>&copy; 2024 Dominguez Tech Solutions. Todos los derechos reservados.</p>
         <ul class="legal-links">
-            <li><a href="terms.html">Términos y Condiciones</a></li>
-            <li><a href="privacy.html">Política de Privacidad</a></li>
-            <li><a href="disclaimer.html">Aviso Legal</a></li>
-            <li><a href="warranty.html">Política de Garantía</a></li>
-            <li><a href="refund.html">Política de Reembolsos</a></li>
-            <li><a href="accessibility.html">Declaración de Accesibilidad</a></li>
-            <li><a href="cookies.html">Política de Cookies</a></li>
+            <li><a href="terms_es.html">Términos y Condiciones</a></li>
+            <li><a href="privacy_es.html">Política de Privacidad</a></li>
+            <li><a href="disclaimer_es.html">Aviso Legal</a></li>
+            <li><a href="warranty_es.html">Política de Garantía</a></li>
+            <li><a href="refund_es.html">Política de Reembolso</a></li>
+            <li><a href="accessibility_es.html">Declaración de Accesibilidad</a></li>
+            <li><a href="cookies_es.html">Política de Cookies</a></li>
         </ul>
     </footer>
 </body>
