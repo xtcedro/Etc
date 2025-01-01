@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dominguez Tech Solutions ofrece reparaciones rápidas y económicas para iPhone y computadoras, desarrollo de software personalizado y diseño de sitios web en Oklahoma City. Servicio de calidad con entrega en 24 horas.">
-    <title>Regístrate - Dominguez Tech Solutions</title>
+    <meta name="description" content="Dominguez Tech Solutions ofrece reparaciones rápidas y asequibles de iPhone y computadoras, desarrollo de software personalizado y diseño web en Oklahoma City. Servicio de calidad con entrega en 24 horas.">
+    <title>Registrarse - Dominguez Tech Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script>
         function setLanguage(lang) {
-            if (lang === 'es') {
-                window.location.href = 'index_es.html'; // Redirigir a la versión en español
+            if (lang === 'en') {
+                window.location.href = 'index.html'; // Redirect to English version
             } else {
                 document.getElementById('language-modal').style.display = 'none';
             }
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <!-- Modal de Selección de Idioma -->
+    <!-- Selección de idioma -->
     <div id="language-modal" class="modal">
         <div class="modal-content">
             <h2>Idioma / Language</h2>
@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <!-- Sección de Encabezado -->
+    <!-- Encabezado -->
     <header>
         <h1 class="header-title">Dominguez Tech Solutions</h1>
         <div class="title-banner">
@@ -41,7 +41,7 @@
         </div>
     </header>
 
-    <!-- Navegación de Escritorio -->
+    <!-- Navegación -->
     <nav class="desktop-nav">
         <a href="index.php" class="active">Inicio</a>
         <a href="about.html">Sobre Nosotros</a>
@@ -49,20 +49,20 @@
         <a href="services.html">Servicios</a>
         <a href="appointments.html">Citas</a>
         <a href="offers.html">Ofertas Especiales</a>
-        <a href="contact.html">Contáctenos</a>
+        <a href="contact.html">Contáctanos</a>
     </nav>
 
     <!-- Sección Hero -->
     <section class="hero-section">
-        <h1 class="hero-title">Bienvenido a Dominguez Tech Solutions - Servicios Tecnológicos Rápidos, Confiables y Económicos para Oklahoma City</h1>
+        <h1 class="hero-title">Bienvenido a Dominguez Tech Solutions - Servicios Técnicos Rápidos, Fiables y Asequibles en Oklahoma City</h1>
         <p>
-            ¿Por qué conformarte con largos tiempos de espera y servicios caros? En <strong>Dominguez Tech Solutions</strong>,
-            nos especializamos en <strong>reparaciones de iPhone, computadoras y laptops en 24 horas</strong>,
-            además de <strong>desarrollo de software personalizado</strong> y <strong>diseño de sitios web</strong>.
+            ¿Por qué conformarse con largos tiempos de espera y servicios costosos? En <strong>Dominguez Tech Solutions</strong>,
+            nos especializamos en ofrecer <strong>reparaciones de iPhone, computadoras y laptops en 24 horas</strong>,
+            además de <strong>desarrollo de software personalizado</strong> y <strong>diseño web</strong>.
             Nuestra misión es brindar un servicio excepcional adaptado a tus necesidades, a un precio que te encantará.
         </p>
         <p>
-            Descubre la diferencia con soluciones tecnológicas personalizadas, transparentes y económicas.
+            Experimenta la diferencia con soluciones tecnológicas personalizadas, transparentes y asequibles.
         </p>
         <button class="cta-button" onclick="location.href='services.html'">Descubre Nuestros Servicios</button>
     </section>
@@ -72,13 +72,13 @@
         <h2>Crea Tu Cuenta</h2>
         <form action="assets/php/signup.php" method="POST">
             <label for="phone">Número de Teléfono:</label>
-            <input type="tel" id="phone" name="phone" placeholder="Introduce tu número de teléfono" required pattern="[0-9]{10}">
+            <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono" class="form-input" required pattern="[0-9]{10}">
 
             <label for="pin">PIN de 6 Dígitos:</label>
-            <input type="text" id="pin" name="pin" placeholder="Introduce un PIN de 6 dígitos" required pattern="[0-9]{6}">
+            <input type="text" id="pin" name="pin" placeholder="Ingresa un PIN de 6 dígitos" class="form-input" required pattern="[0-9]{6}">
 
             <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required>
+            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" class="form-input" required>
 
             <button type="submit" class="cta-button">Registrarse</button>
         </form>
@@ -91,35 +91,35 @@
         <div class="services-container">
             <div class="service-item">
                 <h3>📱 Reparaciones de iPhone</h3>
-                <p>Reparaciones el mismo día para pantallas rotas, reemplazos de batería y más. Precios accesibles con calidad garantizada.</p>
+                <p>Reparaciones el mismo día para pantallas rotas, reemplazo de baterías y más. Precios asequibles con calidad garantizada.</p>
             </div>
             <div class="service-item">
                 <h3>💻 Reparaciones de Computadoras</h3>
-                <p>Desde eliminación de virus hasta actualizaciones de hardware, aseguramos que tus dispositivos funcionen como nuevos. Todas las marcas y sistemas operativos son compatibles.</p>
+                <p>Desde la eliminación de virus hasta actualizaciones de hardware, aseguramos que tus dispositivos funcionen como nuevos. Compatible con todas las marcas y sistemas operativos.</p>
             </div>
             <div class="service-item">
                 <h3>⚙️ Desarrollo de Software Personalizado</h3>
                 <p>Optimiza tus operaciones con soluciones de software adaptadas a tu negocio. Hagamos realidad tus ideas.</p>
             </div>
             <div class="service-item">
-                <h3>🌐 Desarrollo de Sitios Web</h3>
-                <p>Obtén un sitio web profesional, totalmente optimizado, en solo 24 horas. Perfecto para negocios que buscan impactar en línea.</p>
+                <h3>🌐 Desarrollo Web</h3>
+                <p>Obtén un sitio web profesional y totalmente optimizado en solo 24 horas. Perfecto para negocios listos para impactar en línea.</p>
             </div>
         </div>
-        <button class="cta-button" onclick="location.href='services.html'">Ver Todos los Servicios</button>
+        <button class="cta-button" onclick="location.href='services.html'">Ver Todos Los Servicios</button>
     </section>
 
     <!-- Pie de Página -->
     <footer>
         <p>&copy; 2024 Dominguez Tech Solutions. Todos los derechos reservados.</p>
         <ul class="legal-links">
-            <li><a href="terms_es.html">Términos y Condiciones</a></li>
-            <li><a href="privacy_es.html">Política de Privacidad</a></li>
-            <li><a href="disclaimer_es.html">Aviso Legal</a></li>
-            <li><a href="warranty_es.html">Política de Garantía</a></li>
-            <li><a href="refund_es.html">Política de Reembolso</a></li>
-            <li><a href="accessibility_es.html">Declaración de Accesibilidad</a></li>
-            <li><a href="cookies_es.html">Política de Cookies</a></li>
+            <li><a href="terms.html">Términos y Condiciones</a></li>
+            <li><a href="privacy.html">Política de Privacidad</a></li>
+            <li><a href="disclaimer.html">Aviso Legal</a></li>
+            <li><a href="warranty.html">Política de Garantía</a></li>
+            <li><a href="refund.html">Política de Reembolsos</a></li>
+            <li><a href="accessibility.html">Declaración de Accesibilidad</a></li>
+            <li><a href="cookies.html">Política de Cookies</a></li>
         </ul>
     </footer>
 </body>
