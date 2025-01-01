@@ -787,7 +787,7 @@ html {
 /* Tablet View Adjustments (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     body {
-        font-size: 15px; /* Adjust base font size */
+        font-size: 22px; /* Adjust base font size */
     }
 
     nav, .desktop-nav {
@@ -899,11 +899,11 @@ html {
 	.legal-links {
 		flex-wrap: wrap;
 		gap: 10px;
-		font-size: 18px;
+		font-size: 12px;
 	}
 
 	.legal-links a {
-		font-size: 18px;
+		font-size: 12px;
 	}
 }
 
