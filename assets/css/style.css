@@ -803,9 +803,7 @@ html {
 
 /* Tablet View Adjustments (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
-    body {
-        font-size: 22px; /* Adjust base font size */
-    }
+    body { font-size: 22px; /* Adjust base font size */ }
 
     nav, .desktop-nav {
         justify-content: space-between; /* Distribute navigation links evenly */
@@ -935,15 +933,15 @@ html {
         font-size: 1rem; /* Adjust size for messages */
     }
 
-	.legal-links {
-		flex-wrap: wrap;
-		gap: 10px;
-		font-size: 12px;
-	}
+    .legal-links {
+	flex-wrap: wrap;
+	gap: 10px;
+	font-size: 12px;
+    }
 
-	.legal-links a {
-		font-size: 12px;
-	}
+    .legal-links a {
+	font-size: 12px;
+    }
 }
 
 .success-message {
