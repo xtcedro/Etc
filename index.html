@@ -9,7 +9,7 @@
     <script>
         function setLanguage(lang) {
             if (lang === 'es') {
-                window.location.href = 'index_es.html'; // Redirect to Spanish version
+                window.location.href = 'index_es.html';
             } else {
                 document.getElementById('language-modal').style.display = 'none';
             }
@@ -54,11 +54,11 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <h1 class="hero-title">Welcome to Dominguez Tech Solutions</h1>
-        <p>
-            Your go-to provider for <strong>fast, reliable, and affordable tech solutions</strong> in Oklahoma City.
+        <p class="hero-subtitle">
+            Empowering Oklahoma City with reliable, fast, and affordable tech services.
         </p>
         <p>
-            We specialize in <strong>24-hour repairs</strong>, custom software, and website design tailored to your needs.
+            At Dominguez Tech Solutions, we transform tech challenges into opportunities with <strong>24-hour repairs</strong>, custom software, and website designs tailored to your needs.
         </p>
         <button class="cta-button" onclick="location.href='services.html'">Get Started</button>
         <button class="cta-button secondary" onclick="location.href='contact.html'">Contact Us</button>
@@ -88,34 +88,41 @@
         <button class="cta-button" onclick="location.href='services.html'">Learn More</button>
     </section>
 
-
-	<!-- Why Choose Us Section -->
-	<section class="why-choose-us">
-            <h2>Why Choose Dominguez Tech Solutions?</h2>
-			<p>
-			 Partnering with us means more than receiving a service—it means gaining a team dedicated to your success.
-            Here’s why we stand out:
-			</p>
-            <ul>
-                <li>💻 Affordable and reliable tech repair services.</li>
-                <li>⏱️ Quick response times to get your devices working again.</li>
-                <li>📍 Serving the Oklahoma City metro area with a personal touch.</li>
-                <li>🔧 100% satisfaction guaranteed on all services.</li>
-            </ul>
-	</section>
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <h2>Why Choose Dominguez Tech Solutions?</h2>
+        <p>
+            Partnering with us means more than just receiving a service—it means gaining a team committed to your success.
+        </p>
+        <ul>
+            <li>💻 Affordable and reliable tech repair services.</li>
+            <li>⏱️ Quick response times to get your devices working again.</li>
+            <li>📍 Serving the Oklahoma City metro area with a personal touch.</li>
+            <li>🔧 100% satisfaction guaranteed on all services.</li>
+        </ul>
+        <p>
+            Let us show you how technology can transform your business and simplify your life.
+        </p>
+        <a href="services.html" class="btn btn-primary">Explore Our Services</a>
+    </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Dominguez Tech Solutions. All rights reserved.</p>
-        <ul class="legal-links">
-            <li><a href="legal/terms.html">Terms and Conditions</a></li>
-            <li><a href="legal/privacy.html">Privacy Policy</a></li>
-            <li><a href="legal/disclaimer.html">Disclaimer</a></li>
-            <li><a href="legal/warranty.html">Warranty Policy</a></li>
-            <li><a href="legal/refund.html">Refund Policy</a></li>
-            <li><a href="legal/accessibility.html">Accessibility Statement</a></li>
-            <li><a href="legal/cookies.html">Cookie Policy</a></li>
-        </ul>
+        <div class="footer-links">
+            <ul>
+                <li><a href="legal/terms.html">Terms and Conditions</a></li>
+                <li><a href="legal/privacy.html">Privacy Policy</a></li>
+                <li><a href="legal/disclaimer.html">Disclaimer</a></li>
+                <li><a href="legal/warranty.html">Warranty Policy</a></li>
+                <li><a href="legal/refund.html">Refund Policy</a></li>
+                <li><a href="legal/accessibility.html">Accessibility Statement</a></li>
+                <li><a href="legal/cookies.html">Cookie Policy</a></li>
+            </ul>
+            <p class="footer-contact">
+                <strong>Contact Us:</strong> domingueztechsolutions@gmail.com | +1 (539) 901-5819
+            </p>
+        </div>
     </footer>
 </body>
 </html>
