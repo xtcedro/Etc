@@ -1116,3 +1116,33 @@ html {
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
+
+/* Language Switch Styles */
+.language-switch {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.language-switch button {
+    display: flex;
+    align-items: center;
+    background-color: #ffcc00;
+    color: #002855;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.language-switch button:hover {
+    background-color: #d4af37;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    margin-right: 0.5rem;
+}
