@@ -21,7 +21,7 @@ h1, h2, h3 {
 /* Hero Section */
 .hero-section {
 	text-align: center;
-    background: linear-gradient(135eg, #002855, #004080);
+    background: linear-gradient(135deg, #002855, #004080);
 	color: white;
     padding: 3rem 1rem;
 	border-radius: 8px;
