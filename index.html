@@ -4,22 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Dominguez Tech Solutions offers fast, affordable iPhone and computer repairs, custom software development, and website design in Oklahoma City. Quality service with a 24-hour turnaround.">
-    <title>Welcome to Dominguez Tech Solutions - Reliable Tech Services in OKC</title>
+    <title>Home - Dominguez Tech Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
-<script>
-     function setLanguage(lang) {
-    if (lang === 'es') {
-        window.location.href = 'index_es.html';
-    } else if (lang === 'en') {
-        window.location.href = 'index.html';
-    } else {
-        document.getElementById('language-modal').style.display = 'none';
-    }
-     
-    }
-</script>
+    <script>
+        function setLanguage(lang) {
+            if (lang === 'es') {
+                window.location.href = 'index_es.html';
+            } else {
+                document.getElementById('language-modal').style.display = 'none';
+            }
+        }
+    </script>
 </head>
-
 <body>
     <!-- Language Selection Modal -->
     <div id="language-modal" class="modal">
@@ -35,7 +31,6 @@
             </div>
         </div>
     </div>
-
     <!-- Header Section -->
     <header>
         <h1 class="header-title">Dominguez Tech Solutions</h1>
@@ -43,9 +38,8 @@
             <img src="assets/images/banner1.png" alt="Dominguez Tech Solutions">
         </div>
     </header>
-
     <!-- Desktop Navigation -->
-    <nav class="desktop-nav" role="navigation">
+    <nav class="desktop-nav">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About Us</a>
         <a href="about2.html">About Pedro Dominguez</a>
@@ -53,7 +47,6 @@
         <a href="offers.html">Special Offers</a>
         <a href="contact.html">Contact Us</a>
     </nav>
-
     <!-- Hero Section -->
     <section class="hero-section">
         <h1 class="hero-title">Welcome to Dominguez Tech Solutions</h1>
@@ -63,10 +56,9 @@
         <p>
             At Dominguez Tech Solutions, we transform tech challenges into opportunities with <strong>24-hour repairs</strong>, custom software, and website designs tailored to your needs.
         </p>
-        <button class="cta-button" onclick="location.href='services.html'" aria-label="Discover Our Services">Discover Our Services</button>
-        <button class="cta-button secondary" onclick="location.href='contact.html'" aria-label="Contact Us">Contact Us</button>
+        <button class="cta-button" onclick="location.href='services.html'">Discover Our Services</button>
+        <button class="cta-button secondary" onclick="location.href='contact.html'">Contact Us</button>
     </section>
-
     <!-- Services Section -->
     <section id="services" class="services-section">
         <h2>What We Offer</h2>
@@ -88,9 +80,9 @@
                 <p>Launch your professional website in 24 hours. SEO-optimized and mobile-friendly.</p>
             </div>
         </div>
-        <button class="cta-button" onclick="location.href='services.html'" aria-label="Learn More">Learn More</button>
+        <br>
+        <button class="cta-button" onclick="location.href='services.html'">Learn More</button>
     </section>
-
     <!-- Why Choose Us Section -->
     <section class="why-choose-us">
         <h2>Why Choose Dominguez Tech Solutions?</h2>
@@ -108,11 +100,10 @@
         </p>
         <a href="about.html" class="cta-button">About Dominguez Tech Solutions</a>
     </section>
-
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Dominguez Tech Solutions. All rights reserved.</p>
-        <nav class="legal-links">
+        <p>© 2024 Dominguez Tech Solutions. All rights reserved.</p>
+        <div class="legal-links">
             <ul>
                 <li><a href="legal/terms.html">Terms and Conditions</a></li>
                 <li><a href="legal/privacy.html">Privacy Policy</a></li>
@@ -122,10 +113,7 @@
                 <li><a href="legal/accessibility.html">Accessibility Statement</a></li>
                 <li><a href="legal/cookies.html">Cookie Policy</a></li>
             </ul>
-            <p class="footer-contact">
-                <strong>Contact Us:</strong> domingueztechsolutions@gmail.com | +1 (539) 901-5819
-            </p>
-        </nav>
+        </div>
     </footer>
 </body>
 </html>
