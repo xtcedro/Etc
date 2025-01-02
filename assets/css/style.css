@@ -945,11 +945,11 @@ html {
     .legal-links {
 	flex-wrap: wrap;
 	gap: 10px;
-	font-size: 12px;
+	font-size: 20x;
     }
 
     .legal-links a {
-	font-size: 12px;
+	font-size: 20px;
     }
 }
 
