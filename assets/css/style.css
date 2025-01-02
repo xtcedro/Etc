@@ -6,9 +6,8 @@ body {
     background-color: #001f3f; /* Darker blue background */
     color: #D0D3D4; /* Light gray text for readability */
     line-height: 1.6;
-	overflow-x: hidden;
+    overflow-x: hidden;
 }
-
 /* Gold Gradient Titles */
 h1, h2, h3 {
     background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00);
@@ -17,25 +16,19 @@ h1, h2, h3 {
     font-weight: bold;
     text-transform: uppercase;
 }
-
 /* Hero Section */
 .hero-section {
-	text-align: center;
-    background: linear-gradient(135deg, #002855, #004080);
-	color: white;
-    padding: 3rem 1rem;
-	border-radius: 8px;
-	margin 2rem auto;
+    background-color: #002855; /* Dark blue for hero background */
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
 }
-
 .hero-section p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
 }
-
 .hero-title {
     font-size: 2.5rem;
-	color: #ffcc00
     text-align: center;
     margin-bottom: 1rem;
     background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00);
@@ -45,7 +38,6 @@ h1, h2, h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
 .cta-button {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -56,18 +48,10 @@ h1, h2, h3 {
     border-radius: 4px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
-.cta-button.secondary {
-	background-color: #fff;
-	color: #002855
-	border: 1px solid #ffcc00;
-}
-	
 .cta-button:hover {
     background-color: #D4AF37;
     transform: scale(1.05);
 }
-
 /* Navigation Bar */
 nav {
     background-color: #002855; /* Dark blue for nav background */
@@ -78,7 +62,6 @@ nav {
     flex-wrap: wrap;
     position: relative;
 }
-
 nav a {
     color: #FFFFFF;
     text-decoration: none;
@@ -89,12 +72,10 @@ nav a {
     padding: 0.5rem 1rem;
     border-radius: 5px;
 }
-
 nav a:hover {
     color: #002855;
     background-color: #FFD700;
 }
-
 /* Services Section */
 .services-section {
     padding: 3rem 2rem;
@@ -102,31 +83,26 @@ nav a:hover {
     background-color: #001f3f;
     color: #D0D3D4;
 }
-
 .services-container {
     display: flex;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
 }
-
 .service-item {
-    background: #f4f4f4;
+    background: #003366;
     padding: 1.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     border-radius: 8px;
     width: 300px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: #fff;
-	text-align: center;
 }
-
 .service-item:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
 /* Footer */
 footer {
     background-color: #002855;
@@ -135,7 +111,6 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
-
 /* About Section */
 .about-section {
     background: linear-gradient(135deg, #002855, #004080); /* Darker blue gradient */
@@ -148,31 +123,25 @@ footer {
     margin: 2rem auto;
     max-width: 900px;
 }
-
 .about-section h2 {
     font-size: 1.8rem;
     color: #ffcc00; /* Gold color */
     margin-bottom: 1rem;
 }
-
 .about-section p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 0.5rem;
 }
-
 .about-section a {
     color: #ffcc00; /* Gold for links */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
-
 .about-section a:hover {
     color: #d4af37; /* Lighter gold on hover */
 }
-
-
 /* Blockquote Styling */
 blockquote {
     font-style: italic;
@@ -185,7 +154,6 @@ blockquote {
     color: #fff;
     max-width: 700px;
 }
-
 /* Call to Action Section */
 .call-to-action-section {
     background: linear-gradient(135deg, #001f3f, #003366); /* Dark blue gradient */
@@ -198,7 +166,6 @@ blockquote {
     max-width: 900px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
-
 .call-to-action-section h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
@@ -206,18 +173,15 @@ blockquote {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .call-to-action-section p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     line-height: 1.8;
     color: #D0D3D4; /* Light gray */
 }
-
 .call-to-action-section strong {
     color: #FFD700; /* Gold for emphasis */
 }
-
 .call-to-action-section .cta-button {
     background-color: #FFD700; /* Gold button */
     color: #001f3f; /* Dark blue text */
@@ -229,12 +193,10 @@ blockquote {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
-
 .call-to-action-section .cta-button:hover {
     background-color: #D4AF37;
     transform: scale(1.05);
 }
-
 /* Header Titles */
 .header-title {
     font-size: 1.5rem;
@@ -247,7 +209,6 @@ blockquote {
     font-weight: bold;
     letter-spacing: 1px;
 }
-
 /* Input Fields */
 form input[type="text"],
 form input[type="email"],
@@ -266,7 +227,6 @@ form textarea {
     font-size: 1rem;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
-
 /* Language Modal */
 .modal {
     display: flex;
@@ -282,7 +242,6 @@ form textarea {
     overflow: hidden; /* Prevents scrolling when the modal is open */
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
-
 /* Modal Content */
 .modal-content {
     background-color: #001f3f; /* Dark navy blue */
@@ -295,7 +254,6 @@ form textarea {
     width: 90%;
     font-size: 1.5rem;
 }
-
 /* Modal Title */
 .modal-content h2 {
     margin-bottom: 1rem;
@@ -304,7 +262,6 @@ form textarea {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 /* Language Options */
 .language-options {
     display: flex;
@@ -312,7 +269,6 @@ form textarea {
     gap: 1.5rem;
     margin-top: 1rem;
 }
-
 /* Language Buttons */
 .language-options button {
     background-color: #003366; /* Slightly lighter blue */
@@ -329,14 +285,12 @@ form textarea {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Subtle shadow */
     font-weight: bold;
 }
-
 /* Hover Effect for Buttons */
 .language-options button:hover {
     background-color: #FFD700; /* Gold hover effect */
     color: #001f3f; /* Dark blue text on hover */
     transform: scale(1.05); /* Slight zoom */
 }
-
 /* Flag Icon */
 .flag-icon {
     width: 32px;
@@ -344,7 +298,6 @@ form textarea {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for flags */
 }
-
 /* Desktop Navigation Bar */
 .desktop-nav {
     display: flex;
@@ -358,7 +311,6 @@ form textarea {
     z-index: 10; /* Ensures it stays on top */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
-
 /* Navigation Links */
 .desktop-nav a {
     color: #FFFFFF; /* White text for links */
@@ -370,20 +322,17 @@ form textarea {
     padding: 0.5rem 1rem; /* Add padding for clickable area */
     border-radius: 5px; /* Rounded edges for links */
 }
-
 /* Hover Effect for Links */
 .desktop-nav a:hover {
     color: #002855; /* Dark blue text */
     background-color: #FFD700; /* Gold background on hover */
 }
-
 /* Active Link Styling */
 .desktop-nav a.active {
     color: #FFD700; /* Gold text for active link */
     background-color: transparent; /* No background for active link */
     border-bottom: 2px solid #FFD700; /* Gold underline for active state */
 }
-
 .contact-info {
     background-color: #003366; /* Dark blue background */
     color: #ffffff; /* White text */
@@ -394,30 +343,25 @@ form textarea {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     max-width: 600px;
 }
-
 .contact-info h2 {
     font-size: 1.8rem;
     color: #ffcc00; /* Gold color */
     margin-bottom: 1rem;
 }
-
 .contact-info p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 0.5rem;
 }
-
 .contact-info a {
     color: #ffcc00; /* Gold for links */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
-
 .contact-info a:hover {
     color: #d4af37; /* Lighter gold on hover */
 }
-
 /* General Form Styling */
 .form-container {
     background: linear-gradient(135deg, #002855, #003366); /* Smooth gradient */
@@ -428,13 +372,11 @@ form textarea {
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
 }
-
 /* Floating Labels */
 .floating-label {
     position: relative;
     margin-bottom: 1.5rem;
 }
-
 .floating-label input,
 .floating-label textarea {
     width: 100%;
@@ -446,7 +388,6 @@ form textarea {
     font-size: 1rem; /* Input font size */
     transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
-
 .floating-label label {
     position: absolute;
     top: 50%; /* Center vertically */
@@ -457,7 +398,6 @@ form textarea {
     transform: translateY(-50%); /* Center transform */
     transition: all 0.3s ease;
 }
-
 /* When input is focused or has content */
 .floating-label input:focus + label,
 .floating-label textarea:focus + label,
@@ -468,13 +408,11 @@ form textarea {
     font-size: 0.85rem; /* Smaller font size */
     color: #FFD700; /* Gold color for active label */
 }
-
 /* Placeholder Styling */
 .floating-label input::placeholder,
 .floating-label textarea::placeholder {
     color: transparent; /* Hide placeholder text */
 }
-
 /* Focus State */
 .floating-label input:focus,
 .floating-label textarea:focus {
@@ -482,7 +420,6 @@ form textarea {
     box-shadow: 0 0 5px rgba(255, 215, 0, 0.7); /* Gold glow */
     outline: none;
 }
-
 .form-container textarea {
     width: 100%;
     padding: 0.75rem;
@@ -494,7 +431,6 @@ form textarea {
     font-size: 1rem;
     resize: vertical; /* Allow vertical resizing */
 }
-
 /* Form Buttons */
 form button {
     display: block;
@@ -511,17 +447,14 @@ form button {
     transition: background-color 0.3s, transform 0.2s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Button shadow */
 }
-
 form button:hover {
     background-color: #D4AF37; /* Slightly darker gold */
     transform: translateY(-2px); /* Button hover effect */
 }
-
 form button:active {
     transform: translateY(2px); /* Button press effect */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Reduce shadow */
 }
-
 /* Error and Success Messages */
 form .error-message,
 form .success-message {
@@ -532,17 +465,14 @@ form .success-message {
     font-weight: bold;
     animation: fadeIn 0.5s ease; /* Smooth fade-in */
 }
-
 form .error-message {
     background-color: #D9534F; /* Red background */
     color: #FFFFFF; /* White text */
 }
-
 form .success-message {
     background-color: #5CB85C; /* Green background */
     color: #FFFFFF; /* White text */
 }
-
 /* Animation for Messages */
 @keyframes fadeIn {
     from {
@@ -554,7 +484,6 @@ form .success-message {
         transform: translateY(0);
     }
 }
-
 /* Legal Links */
 .legal-links {
     list-style-type: none; /* Removes default bullet points */
@@ -565,21 +494,17 @@ form .success-message {
     gap: 20px; /* Adds spacing between items */
     font-size: 22px; /* Makes the text slightly smaller */
 }
-
 .legal-links li {
     display: inline; /* Ensures list items are inline */
 }
-
 .legal-links a {
     text-decoration: none; /* Removes underline */
     color: #555; /* Sets a neutral text color */
 }
-
 .legal-links a:hover {
     color: #007BFF; /* Changes color on hover (use your theme's accent color) */
     text-decoration: underline; /* Adds underline on hover */
 }
-
 /* Adjusted .title-banner Styling */
 .title-banner {
   width: 100vw;
@@ -592,7 +517,6 @@ form .success-message {
   z-index: 1;
   overflow: hidden;
 }
-
 .title-banner img {
   display: block;
   width: 100vw; /* Slightly reduce size */
@@ -600,11 +524,9 @@ form .success-message {
   margin: 0 auto;
   object-fit: cover;
 }
-
 html {
  overflow-x: hidden;
 }
-
 /* Offers Section */
 .offers-section {
     padding: 3rem 2rem;
@@ -617,7 +539,6 @@ html {
     max-width: 900px;
     border: 4px solid #FFC200; /* Gold border for extra focus */
 }
-
 /* Offers Title */
 .offers-title {
     font-size: 2.8rem;
@@ -628,7 +549,6 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 /* Offers Description */
 .offers-description {
     font-size: 1.5rem;
@@ -636,7 +556,6 @@ html {
     margin-bottom: 2rem;
     color: #001F3F; /* Slightly darker text for readability */
 }
-
 /* Call to Action Button */
 .offers-cta-button {
     display: inline-block;
@@ -650,13 +569,10 @@ html {
     border-radius: 6px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .offers-cta-button:hover {
     background-color: #D35400; /* Darker orange on hover */
     transform: scale(1.05); /* Slight zoom effect */
 }
-
-
 /* Mobile View Styling (max-width: 767px) */
 @media (max-width: 480px) {
     body {
@@ -664,499 +580,113 @@ html {
         margin: 0;
         padding: 0;
     }
-
     nav, .desktop-nav {
         flex-direction: column; /* Stack navigation links vertically */
         align-items: center;
         padding: 1rem 0;
         gap: 1rem; /* Space between links */
     }
-
     .desktop-nav a {
         font-size: 0.85rem; /* Smaller font size for mobile */
         width: 100%; /* Full-width links */
         padding: 0.5rem; /* Adjust padding for smaller screens */
         text-align: center; /* Center align text */
     }
-
     .desktop-nav a.active {
         border-bottom: none; /* Remove underline on active link for mobile */
     }
-
     .hero-section {
         padding: 2rem 1rem; /* Reduce padding for smaller screens */
     }
-
     .hero-title {
         font-size: 1.8rem; /* Resize title for better visibility */
         margin-bottom: 1rem;
     }
-
     .hero-section p {
         font-size: 1rem;
         line-height: 1.5;
         margin-bottom: 1.5rem;
     }
-
     .cta-button {
         font-size: 1rem;
         padding: 0.8rem 1rem; /* Adjust button size for readability */
     }
-
-
-	.signup-section {
-		padding: 10px;
-		max-width: 90%;
-	}
-
-	.signup-section h2 {
-		font-size: 20px;
-	}
-
-
-	.signup-form input[type"tel"],
-	.signup-form input[type"text"],
-	.signup-form input[type"passwords"], {
-		font-size: 12px;
-		padding: 6px;
-	}
-
-	.signup-section p {
-		font-size: 12px;
-	}
+    .signup-section {
+        padding: 10px;
+        max-width: 90%;
+    }
+    .signup-section h2 {
+        font-size: 20px;
+    }
+    .signup-form input[type"tel"],
+    .signup-form input[type"text"],
+    .signup-form input[type"passwords"], {
+        font-size: 12px;
+        padding: 6px;
+    }
+    .signup-section p {
+        font-size: 12px;
+    }
     .title-banner {
         padding: 1rem 0; /* Add spacing for mobile */
         background-color: #f8f8f8; /* Optional: light background for contrast */
     }
-
     .title-banner img {
         max-width: 100%; /* Ensure full responsiveness */
         height: auto;
         margin: 0 auto; /* Center the image */
     }
-
     .services-container {
         flex-direction: column; /* Stack items vertically */
         gap: 1.5rem;
     }
-
     .service-item {
         width: 90%; /* Use almost full width */
         margin: 0 auto; /* Center the items */
     }
-
     .contact-info {
         padding: 1.5rem; /* Reduce padding for smaller screens */
         margin: 1.5rem auto; /* Adjust margin for spacing */
         font-size: 0.9rem; /* Adjust font size */
     }
-
     .contact-info h2 {
         font-size: 1.5rem; /* Slightly smaller heading */
     }
-
     .contact-info p {
         font-size: 0.9rem; /* Adjust paragraph size */
     }
-
     .contact-info a {
         font-size: 1rem; /* Consistent link size */
     }
-
     .form-container {
         padding: 1.5rem; /* Adjust padding for smaller screens */
         margin: 1rem auto; /* Center and reduce margin */
         max-width: 90%; /* Use most of the screen width */
     }
-
     .floating-label input,
     .floating-label textarea {
         font-size: 0.9rem; /* Adjust font size for readability */
         padding: 0.6rem 0.5rem; /* Reduce padding */
     }
-
     .floating-label label {
         font-size: 0.9rem; /* Adjust label size for smaller inputs */
     }
-
     .offers-section {
         padding: 2rem 1rem; /* Reduce padding for smaller screens */
         margin: 1rem auto;
         max-width: 95%; /* Full width with slight margin */
     }
-
     .offers-title {
         font-size: 2.2rem; /* Slightly smaller title for mobile */
         margin-bottom: 1rem;
     }
-
     .offers-description {
         font-size: 1.2rem; /* Adjust description font size */
         line-height: 1.6;
     }
-
     .offers-cta-button {
         font-size: 1rem; /* Smaller button font size */
         padding: 0.6rem 1.2rem; /* Adjust button padding */
     }
-
     form button {
-        font-size: 0.9rem; /* Adjust button font size */
-        padding: 0.6rem; /* Smaller padding for buttons */
-    }
-
-    .error-message,
-    .success-message {
-        font-size: 0.9rem; /* Adjust message font size */
-    }
-}
-
-/* Tablet View Adjustments (768px to 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    body { font-size: 22px; /* Adjust base font size */ }
-
-    nav, .desktop-nav {
-        justify-content: space-between; /* Distribute navigation links evenly */
-        padding: 1rem 1.5rem;
-    }
-
-    .desktop-nav a {
-        font-size: 0.9rem; /* Slightly larger font size for tablets */
-        padding: 0.5rem 1rem;
-    }
-
-    .desktop-nav a.active {
-        border-bottom: 2px solid #FFD700; /* Retain underline for tablets */
-    }
-
-    .hero-title {
-        font-size: 2.2rem; /* Adjust title size for tablets */
-    }
-
-    .cta-button {
-        font-size: 1rem;
-        padding: 0.8rem 1.2rem; /* Adjust button size */
-    }
-
-    .title-banner {
-        padding: 0; /* Moderate padding for tablets */
-    }
-
-    .title-banner img {
-        width: 100vw; /* Slightly reduce image size */
-    }
-
-    .services-container {
-        flex-wrap: wrap; /* Allow wrapping of items */
-        gap: 1rem;
-    }
-
-    .service-item {
-        width: 48%; /* Two items per row */
-        margin: 0 1%;
-    }
-
-    .contact-info {
-        padding: 2rem; /* Standard padding for tablets */
-        margin: 2rem auto;
-        font-size: 1rem; /* Standard paragraph size */
-    }
-
-    .contact-info h2 {
-        font-size: 1.7rem; /* Adjust heading size */
-    }
-
-    .contact-info p {
-        font-size: 1rem; /* Standard paragraph size */
-    }
-
-    .contact-info a {
-        font-size: 1rem; /* Consistent link size */
-    }
-
-    .form-container {
-        padding: 2rem; /* Maintain balance for tablet screens */
-        margin: 1.5rem auto;
-        max-width: 80%; /* Slightly wider form for tablets */
-    }
-
-    .floating-label input,
-    .floating-label textarea {
-        font-size: 1rem; /* Standard font size */
-        padding: 0.7rem; /* Slightly larger padding for better UX */
-    }
-
-    .floating-label label {
-        font-size: 1rem; /* Consistent label size */
-    }
-
-    .offers-section {
-        padding: 2.5rem 2rem; /* Moderate padding */
-        margin: 1.5rem auto;
-        max-width: 85%; /* Maintain balanced width */
-    }
-
-    .offers-title {
-        font-size: 2.5rem; /* Adjust size for tablets */
-        margin-bottom: 1.2rem;
-    }
-
-
-	.signup-section {
-		padding: 15px;
-		max-width: 500px;
-	}
-
-	.signup-section h2 {
-		font-size: 22px;
-	}
-
-
-	.signup-form input[type"tel"],
-	.signup-form input[type"text"],
-	.signup-form input[type"passwords"], {
-		font-size: 13px;
-		padding: 8px;
-	}
-
-	.signup-section p {
-		font-size: 13px;
-	}
-
-    .offers-description {
-        font-size: 1.3rem; /* Moderate font size */
-        line-height: 1.7;
-    }
-
-    .offers-cta-button {
-        font-size: 1.1rem; /* Adjust button size */
-        padding: 0.7rem 1.5rem;
-    }
-
-    form button {
-        font-size: 1rem; /* Standard font size */
-        padding: 0.75rem; /* Adjust padding for tablet buttons */
-    }
-
-    .error-message,
-    .success-message {
-        font-size: 1rem; /* Adjust size for messages */
-    }
-
-    .legal-links {
-	flex-wrap: wrap;
-	gap: 10px;
-	font-size: 20x;
-    }
-
-    .legal-links a {
-	font-size: 20px;
-    }
-}
-
-.success-message {
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
-    padding: 10px;
-    margin: 20px auto;
-    text-align: center;
-    border-radius: 5px;
-    width: 80%;
-    font-size: 16px;
-}
-
-/* General Styling for Signup Section */
-.signup-section {
-    background-color: #001f3f; /* Dark Navy Blue */
-    color: #ffffff; /* White */
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.signup-section h2 {
-    text-align: center;
-    color: #ffd700; /* Gold */
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.signup-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.signup-form label {
-    font-size: 16px;
-    color: #ffffff; /* White */
-}
-
-.signup-form input[type="tel"],
-.signup-form input[type="text"],
-.signup-form input[type="password"] {
-    background-color: #ffffff; /* White */
-    color: #001f3f; /* Dark Navy Blue */
-    border: 2px solid #ffd700; /* Gold */
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.signup-form input::placeholder {
-    color: #7f8c8d; /* Light Gray */
-}
-
-.signup-form input:focus {
-    border-color: #ffffff; /* White */
-    outline: none;
-}
-
-.signup-section p {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 14px;
-}
-
-.signup-section a {
-    color: #ffd700; /* Gold */
-    text-decoration: none;
-}
-
-.signup-section a:hover {
-    text-decoration: underline;
-}
-
-/* Hero Section */
-.hero-contact {
-    text-align: center;
-    background: linear-gradient(135deg, #002855, #004080);
-    color: white;
-    padding: 3rem 1rem;
-    border-radius: 8px;
-    margin: 2rem auto;
-    max-width: 800px;
-}
-
-.hero-contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #ffcc00;
-}
-
-.hero-contact p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.cta-button {
-    display: inline-block;
-    margin: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    background-color: #ffcc00;
-    color: #002855;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button.secondary {
-    background-color: #fff;
-    color: #002855;
-    border: 1px solid #ffcc00;
-}
-
-.cta-button:hover {
-    background-color: #d4af37;
-    color: white;
-}
-
-/* Contact Information Section */
-.contact-info {
-    text-align: center;
-    padding: 2rem;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    margin: 2rem auto;
-    max-width: 800px;
-}
-
-.contact-info h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-/* Why Choose Us Section */
-.why-choose-us {
-    text-align: center;
-    margin: 2rem auto;
-    padding: 2rem;
-    background: #002855;
-    color: white;
-    border-radius: 8px;
-    max-width: 800px;
-}
-
-.why-choose-us h2 {
-    font-size: 2rem;
-    color: #ffcc00;
-    margin-bottom: 1rem;
-}
-
-.why-choose-us ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.why-choose-us ul li {
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-}
-
-/* Language Switch Styles */
-.language-switch {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-}
-
-.language-switch button {
-    display: flex;
-    align-items: center;
-    background-color: #ffcc00;
-    color: #002855;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.language-switch button:hover {
-    background-color: #d4af37;
-}
-
-.flag-icon {
-    width: 20px;
-    height: 15px;
-    margin-right: 0.5rem;
-}
-
-.footer-contact {
-    margin-top: 1rem;
-    font-size: 1rem;
-    text-align: center;
-    color: #ffffff; /* White text */
-    line-height: 1.5;
-}
-
-.footer-contact strong {
-    color: #ffcc00; /* Gold text for emphasis */
-    font-weight: bold;
-}
+        font-size: 0.9rem; /* Adjust button font
