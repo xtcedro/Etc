@@ -1146,3 +1146,16 @@ html {
     height: 15px;
     margin-right: 0.5rem;
 }
+
+.footer-contact {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #ffffff; /* White text */
+    line-height: 1.5;
+}
+
+.footer-contact strong {
+    color: #ffcc00; /* Gold text for emphasis */
+    font-weight: bold;
+}
