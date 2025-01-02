@@ -3,77 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dominguez Tech Solutions ofrece reparaciones rápidas y asequibles de iPhones y computadoras, desarrollo de software personalizado y diseño de sitios web en la ciudad de Oklahoma. Servicio de calidad con entrega en 24 horas.">
-    <title>Regístrate - Dominguez Tech Solutions</title>
+    <meta name="description" content="Dominguez Tech Solutions ofrece reparaciones rápidas y asequibles de iPhone y computadoras, desarrollo de software personalizado y diseño de sitios web en Oklahoma City. Servicio de calidad con entrega en 24 horas.">
+    <title>Inicio - Dominguez Tech Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        function setLanguage(lang) {
+            if (lang === 'en') {
+                window.location.href = 'index.html'; // Redirect to English version
+            } else {
+                window.location.href = 'index_es.html'; // Redirect to Spanish version
+            }
+        }
+    </script>
 </head>
 
 <body>
-	<!-- Sección de encabezado -->
-	<header>
+    <!-- Encabezado -->
+    <header>
         <h1 class="header-title">Dominguez Tech Solutions</h1>
         <div class="title-banner">
             <img src="assets/images/banner1.png" alt="Dominguez Tech Solutions">
         </div>
-	</header>
+        <!-- Language Switch -->
+        <div class="language-switch">
+            <button onclick="setLanguage('en')">
+                <img src="assets/images/us-flag.png" alt="English" class="flag-icon"> English
+            </button>
+        </div>
+    </header>
 
-    <!-- Navegación de escritorio -->
+    <!-- Navegación -->
     <nav class="desktop-nav">
         <a href="index_es.html" class="active">Inicio</a>
         <a href="about_es.html">Sobre Nosotros</a>
         <a href="about2_es.html">Sobre Pedro Dominguez</a>
         <a href="services_es.html">Servicios</a>
-        <a href="offer_es.html">Ofertas Especiales</a>
+        <a href="offers_es.html">Ofertas Especiales</a>
         <a href="contact_es.html">Contáctanos</a>
     </nav>
 
-    <!-- Sección de héroe -->
+    <!-- Sección Hero -->
     <section class="hero-section">
-        <h1 class="hero-title">Bienvenido a Dominguez Tech Solutions - Servicios Tecnológicos Rápidos, Confiables y Asequibles para la Ciudad de Oklahoma</h1>
+        <h1 class="hero-title">Bienvenido a Dominguez Tech Solutions</h1>
         <p>
-            ¿Por qué conformarse con largos tiempos de espera y servicios costosos? En <strong>Dominguez Tech Solutions</strong>,
-            nos especializamos en ofrecer <strong>reparaciones de iPhones, computadoras y laptops en 24 horas</strong>,
-            junto con <strong>desarrollo de software personalizado</strong> y <strong>diseño de sitios web</strong>.
-            Nuestra misión es brindar un servicio excepcional adaptado a tus necesidades, a un precio que te encantará.
+            Tu proveedor confiable de <strong>soluciones tecnológicas rápidas, asequibles y confiables</strong> en Oklahoma City.
         </p>
         <p>
-            Experimenta la diferencia de soluciones tecnológicas personalizadas, transparentes y asequibles.
+            Nos especializamos en <strong>reparaciones en 24 horas</strong>, desarrollo de software personalizado y diseño de sitios web adaptado a tus necesidades.
         </p>
-        <button class="cta-button" onclick="location.href='about_es.html'">Aprende Mas Sobre Nosotros</button>
+        <button class="cta-button" onclick="location.href='services_es.html'">Comenzar Ahora</button>
+        <button class="cta-button secondary" onclick="location.href='contact_es.html'">Contáctanos</button>
     </section>
 
-
-    <!-- Sección de servicios -->
+    <!-- Sección de Servicios -->
     <section id="services" class="services-section">
         <h2>Lo Que Ofrecemos</h2>
         <div class="services-container">
             <div class="service-item">
                 <h3>📱 Reparaciones de iPhone</h3>
-                <p>Reparaciones el mismo día para pantallas rotas, reemplazo de baterías y más. Precios asequibles con calidad garantizada.</p>
+                <p>Reparaciones rápidas de pantallas, cambios de batería y más. Precios asequibles con calidad garantizada.</p>
             </div>
             <div class="service-item">
                 <h3>💻 Reparaciones de Computadoras</h3>
-                <p>Desde eliminación de virus hasta actualizaciones de hardware, aseguramos que tus dispositivos funcionen como nuevos. Se aceptan todas las marcas y sistemas operativos.</p>
+                <p>Actualizaciones de hardware, eliminación de virus y optimización del sistema para todas las marcas y sistemas operativos.</p>
             </div>
             <div class="service-item">
                 <h3>⚙️ Desarrollo de Software Personalizado</h3>
-                <p>Optimiza tus operaciones con soluciones de software adaptadas a tu negocio. Hagamos realidad tus ideas.</p>
+                <p>Optimiza las operaciones de tu negocio con soluciones de software a medida.</p>
             </div>
             <div class="service-item">
                 <h3>🌐 Desarrollo de Sitios Web</h3>
-                <p>Obtén un sitio web profesional y completamente optimizado en solo 24 horas. Perfecto para empresas listas para impactar en línea.</p>
+                <p>Lanza tu sitio web profesional en 24 horas. SEO optimizado y compatible con dispositivos móviles.</p>
             </div>
         </div>
-        <button class="cta-button" onclick="location.href='services_es.html'">Descubre Nuestro Servicios</button>
+        <button class="cta-button" onclick="location.href='services_es.html'">Descubre Nuestros Servicios</button>
     </section>
 
-    <!-- Pie de página -->
+    <!-- Pie de Página -->
     <footer>
         <p>&copy; 2024 Dominguez Tech Solutions. Todos los derechos reservados.</p>
         <ul class="legal-links">
             <li><a href="legal/terms_es.html">Términos y Condiciones</a></li>
             <li><a href="legal/privacy_es.html">Política de Privacidad</a></li>
-            <li><a href="legal/disclaimer_es.html">Aviso Legal</a></li>
+            <li><a href="legal/disclaimer_es.html">Descargo de Responsabilidad</a></li>
             <li><a href="legal/warranty_es.html">Política de Garantía</a></li>
             <li><a href="legal/refund_es.html">Política de Reembolso</a></li>
             <li><a href="legal/accessibility_es.html">Declaración de Accesibilidad</a></li>
