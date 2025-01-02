@@ -61,7 +61,8 @@ h1, h2, h3 {
 	background-color: #fff;
 	color: #002855
 	border: 1px solid #ffcc00;
-
+}
+	
 .cta-button:hover {
     background-color: #D4AF37;
     transform: scale(1.05);
